@@ -15,7 +15,7 @@ const Button: React.FC<ButtonProps> = ({ buttonText,href }) => {
   );
 };
 
-const StyledWrapper = styled.div`
+export const StyledWrapper = styled.div`
   .button {
     position: relative;
     width: 120px;
