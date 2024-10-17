@@ -57,7 +57,7 @@ const Page: React.FC = () => {
 
           <h3 className="text-xl font-semibold mt-6 mb-2">User Conduct</h3>
           <p className="mb-4">
-            You agree to use our website only for lawful purposes. Prohibited activities include unauthorized access, transmitting harmful content, and disrupting the website's functionality.
+            You agree to use our website only for lawful purposes. Prohibited activities include unauthorized access, transmitting harmful content, and disrupting the website&apos;s functionality.
           </p>
 
           <h3 className="text-xl font-semibold mt-6 mb-2">Disclaimer</h3>
