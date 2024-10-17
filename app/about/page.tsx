@@ -10,7 +10,7 @@ const Page = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-800 text-white  px-6">
+    <div className="flex container mx-auto flex-col items-center justify-center min-h-screen bg-gray-800 text-white  px-6">
       <div style={{ zIndex: '-1' }} className="layer top-0"></div>
       <div style={{ backdropFilter: 'blur(10px)' }}>
       

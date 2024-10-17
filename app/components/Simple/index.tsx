@@ -8,7 +8,7 @@ const Simple = () => {
       <div className="simplefive"></div>
       <div className="mx-auto max-w-5xl py-24 px-6 ">
         <h3 className="text-center text-offwhite text-xl lg:text-5xl font-semibold mb-6">
-          Explore the Best Social Casino Game With Us!
+          Explore Our games  With Us!
         </h3>
         <p className="text-center text-bluish text-lg font-normal mb-8">
           Immerse yourself in a world of excitement and endless entertainment

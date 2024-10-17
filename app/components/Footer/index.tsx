@@ -47,14 +47,7 @@ const footer = () => {
             <h1 className="text-white font-bold mb-5">Disclaimer</h1>
             <h3 className="text-lightblue text-sm font-normal leading-6 mb-4 lg:mb-16">
               {" "}
-              At yourgamedestination.org, we focus on creating a secure and
-              enjoyable space for players to explore social casino games without
-              any real money gambling involved. We’re not affiliates or
-              aggregators; instead, we aim to educate users about social casino
-              games and offer information on popular options. Our platform is
-              dedicated to providing valuable insights and reviews without
-              requesting payment or sensitive information. Enjoy browsing our
-              content and discovering top social casino games without any risks.
+              At yourgamedestination.org, we focus on creating a secure and enjoyable space for players to explore social casino games with no money involved. We’re not affiliates or aggregators; instead, our aim is to educate users about social casino games and provide information on popular options. Our platform is dedicated to offering valuable insights and reviews without requesting payment or sensitive information. It's important to note that winning in social casino games does not imply a win rate in real money casinos. Enjoy browsing our content and discovering top social casino games without any risks!
             </h3>
             <div className="flex gap-4">
               {socialLinks.map((items, i) => (

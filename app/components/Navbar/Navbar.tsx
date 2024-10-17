@@ -38,12 +38,12 @@ const Navbar = () => {
               {/* LOGO */}
 
               <Link href={'/'} className="flex  flex-shrink-0 items-center">
-                <Image width={300} height={300}
+                <Image width={100} height={100}
                   className="block h-10 w-20px lg:hidden"
                   src={"/images/Logo/logo.svg"}
                   alt="Crypto-Logo"
                 />
-                <Image width={300} height={300}
+                <Image width={100} height={100}
                   className="hidden h-48px w-48px lg:block"
                   src={"/images/Logo/logo.svg"}
                   alt="Crypto-Logo"
