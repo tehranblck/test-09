@@ -62,7 +62,7 @@ const Page: React.FC = () => {
 
           <h3 className="text-xl font-semibold mt-6 mb-2">Disclaimer</h3>
           <p className="mb-4">
-            Our website is provided "as is" and "as available," without any warranties. We do not guarantee that the website will be error-free or secure.
+            Our website is provided &quot;as is&quot; and &quot;as available,&quot; without any warranties. We do not guarantee that the website will be error-free or secure.
           </p>
 
           <h3 className="text-xl font-semibold mt-6 mb-2">Limitation of Liability</h3>
