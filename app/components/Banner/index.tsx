@@ -1,31 +1,24 @@
 "use client";
 import Image from "next/image";
 import React, { useState } from "react";
-import ModalVideo from "react-modal-video";
+import Button from "../Button/Button";
 
 const Banner = () => {
-  const [isOpen, setOpen] = useState(true);
+  const [isOpen, setOpen] = useState(false);
 
   return (
-    <div  className="bg-image relative" id="home-section">
+    <div className="bg-image relative" id="home-section">
       <div className="arrowOne"></div>
       <div className="radial-banner hidden lg:block"></div>
-      {/* <ModalVideo
-        channel="youtube"
-        isOpen={isOpen}
-        videoId="hYyMDvRQMAk"
-        onClose={() => setOpen(false)}
-      /> */}
 
       <div className="mx-auto max-w-7xl pt-16 lg:pt-40 sm:pb-24 px-6">
         <div className="height-work">
           <div className="flex justify-center items-center flex-col-reverse">
-            {/* <div className="arrowTwo"></div> */}
             <div className="col-span-7">
-              <h1 className="text-3xl lg:text-6xl font-bold mb-5 !backdrop-brightness-50 text-white md:4px md:text-center text-center w-70%">
+              <h1 className="text-3xl lg:text-6xl font-bold mb-5 !backdrop-brightness-50 text-white text-center">
                 Find Your Best Social Casino Game
               </h1>
-              <p className="text-white md:text-sm space-x-1 font-normal mb-10 md:text-center text-center">
+              <p className="text-white md:text-sm space-x-1 font-normal mb-10 text-center">
                 Welcome to yourgamedestination.org, the ultimate destination for
                 social casino game reviews! Our platform is dedicated to
                 providing insightful and engaging reviews of a wide variety of
@@ -35,20 +28,11 @@ const Banner = () => {
                 Explore our reviews to discover the best social casino game and
                 enjoy a safe, fun, and risk-free gaming experience.
               </p>
-              {/* <div className="flex align-middle justify-center md:justify-center">
-                <button
-                  onClick={() => setOpen(true)}
-                  className="bg-transparent flex justify-center items-center text-white"
-                >
-                  <Image
-                    src={"/images/Banner/playbutton.svg"}
-                    alt="button-image"
-                    className="mr-3"
-                    width={67}
-                    height={67}
-                  />
-                </button>
-              </div> */}
+
+              {/* Centered Button */}
+              <div className="flex justify-center">
+                <Button buttonText="Play" href="/game/index.html" />
+              </div>
             </div>
 
             <div className="col-span-5 lg:mb-10">
@@ -59,7 +43,7 @@ const Banner = () => {
                 <Image
                   className="m-auto hidden md:block"
                   src="/images/Logo/ban.png"
-                  alt="nothing"
+                  alt="banner-image"
                   width={400}
                   height={460}
                 />
