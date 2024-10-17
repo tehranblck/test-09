@@ -3,6 +3,7 @@ import React from 'react';
 import { useForm, SubmitHandler } from 'react-hook-form';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import Button from '../Button/Button';
 
 interface FormData {
   email: string;
@@ -36,7 +37,7 @@ const Form: React.FC = () => {
             <input
               type="text"
               id="email"
-              className="w-full p-3 rounded bg-gray-700 border border-gray-600 text-black"
+              className="w-full p-3 rounded bg-gray-700 border outline-none border-gray-600 text-black"
               placeholder="Enter your  email"
               {...register("email", { required: true, pattern: /^\S+@\S+$/i })}
             />
@@ -52,7 +53,7 @@ const Form: React.FC = () => {
             </label>
             <textarea
               id="textarea"
-              className="w-full p-3 rounded bg-gray-700 border border-gray-600 text-black resize-none"
+              className="w-full p-3 rounded bg-gray-700 outline-none border border-gray-600 text-black resize-none"
               rows={4}
               placeholder="Your message..."
               {...register("textarea", { required: true, minLength: 10 })}
@@ -64,7 +65,7 @@ const Form: React.FC = () => {
             )}
           </div>
           <button
-            type="submit"
+            
             className="w-full py-3 rounded bg-blue-500 text-white font-semibold hover:bg-blue-600 transition duration-200"
           >
             Submit
