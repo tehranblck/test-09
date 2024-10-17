@@ -37,7 +37,9 @@ const footer = () => {
           {/* COLUMN-1 */}
 
           <div className="col-span-6 lg:mr-14">
-            <img
+            <Image
+            width={200}
+            height={200}
               className="block h-12 w-20px mb-6"
               src={"/images/Logo/logo.svg"}
               alt="Crypto-Logo"
@@ -57,7 +59,9 @@ const footer = () => {
             <div className="flex gap-4">
               {socialLinks.map((items, i) => (
                 <Link href={items.href} key={i}>
-                  <img
+                  <Image
+                  width={400}
+                  height={400}
                     src={items.imgsrc}
                     alt={items.imgsrc}
                     className="footer-icons"

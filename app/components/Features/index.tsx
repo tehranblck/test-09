@@ -48,7 +48,7 @@ const Features = () => {
             At yourgamedestination.org, your safety and trust are our highest
             priorities. Rather than offering casino games, we focus on educating
             users about social casino games and showcasing the most popular
-            ones. We've implemented advanced security measures to keep your data
+            ones. We&apos;ve implemented advanced security measures to keep your data
             secure at all times. Browse our trusted reviews and gain valuable
             insights into top social casino games in a safe and secure
             environment.

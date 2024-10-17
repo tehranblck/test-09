@@ -5,6 +5,7 @@ import { Bars3Icon } from "@heroicons/react/24/outline";
 import Drawer from "./Drawer";
 import Drawerdata from "./Drawerdata";
 import Button from "../Button/Button";
+import Image from "next/image";
 // import Contactusform from './Contactus';
 
 interface NavigationItem {
@@ -37,12 +38,12 @@ const Navbar = () => {
               {/* LOGO */}
 
               <div className="flex flex-shrink-0 items-center">
-                <img
+                <Image width={300} height={300}
                   className="block h-10 w-20px lg:hidden"
                   src={"/images/Logo/logo.svg"}
                   alt="Crypto-Logo"
                 />
-                <img
+                <Image width={300} height={300}
                   className="hidden h-48px w-48px lg:block"
                   src={"/images/Logo/logo.svg"}
                   alt="Crypto-Logo"

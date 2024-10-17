@@ -1,6 +1,7 @@
 import React, { ReactNode } from "react";
 import { XMarkIcon } from '@heroicons/react/24/outline'
 import Link from "next/link";
+import Image from "next/image";
 
 
 interface DrawerProps {
@@ -31,7 +32,7 @@ const Drawer = ({ children, isOpen, setIsOpen }: DrawerProps) => {
                     <header className="px-4 py-4 flex items-center justify-between">
 
                         <div className="flex flex-shrink-0 items-center">
-                            <img
+                            <Image width={200} height={300}
                                 className="block h-10 lg:hidden"
                                 src={'/images/Logo/logo.svg'}
                                 alt="Crypto-Logo"

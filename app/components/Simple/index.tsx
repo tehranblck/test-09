@@ -13,7 +13,7 @@ const Simple = () => {
         <p className="text-center text-bluish text-lg font-normal mb-8">
           Immerse yourself in a world of excitement and endless entertainment
           with our in-depth reviews of the top social casino games. Whether
-          you're an experienced player or new to the scene, we have something
+          you&apos;re an experienced player or new to the scene, we have something
           for everyone. Our platform showcases the latest releases, timeless
           favorites, and hidden treasures that will keep you engaged for
           hours—all at no cost. Check out our reviews to discover your next
