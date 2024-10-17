@@ -75,10 +75,10 @@ const footer = () => {
 
           {products.map((product) => (
             <div key={product.id} className="group relative col-span-2">
-              <p className="text-white text-xl font-medium mb-9">
+              <p className="text-white text-xl font-medium mb-2">
                 {product.section}
               </p>
-              <ul className="mt-16">
+              <ul className="mt-2">
                 {product.link.map((link: string, index: number) => (
                   <li key={index} className="mb-4">
                     <Link
@@ -94,7 +94,7 @@ const footer = () => {
           ))}
 
           <div className="col-span-4">
-            <h3 className="text-white text-xl font-medium mb-9">Contact Us</h3>
+            <h3 className="text-white text-xl font-medium mb-2">Contact Us</h3>
             <h4 className="text-offwhite text-sm font-normal mb-6 flex gap-2 mt-16">
               <Image
                 src={"/images/Footer/email.svg"}

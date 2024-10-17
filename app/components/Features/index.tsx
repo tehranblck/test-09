@@ -31,7 +31,7 @@ const featuresdata: featuresdata[] = [
 const Features = () => {
   return (
     <div
-      className="mx-auto max-w-7xl my-0 md:my-40 pt-36 px-6 relative"
+      className="mx-auto max-w-7xl my-0 md:my-10  px-6 relative"
       id="features-section"
     >
       <div className="radial-bg hidden lg:block"></div>

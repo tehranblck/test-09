@@ -5,7 +5,7 @@ import Table from "./components/Table/index";
 import Features from "./components/Features/index";
 import Simple from "./components/Simple/index";
 import Trade from "./components/Trade/index";
-import Faq from "./components/Faq/index";
+import InfoComponent from "./components/Faq/index";
 type Props = {
   params: {};
   searchParams: { [key: string]: string | string[] | undefined };
@@ -26,7 +26,7 @@ export default function Home(props: Props) {
 <Features />
 <Simple />
 {/* <Trade /> */}
-<Faq />
+<InfoComponent />
       </div>
     </main>
   );

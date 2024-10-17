@@ -19,7 +19,7 @@ const navigation: NavigationItem[] = [
   { name: "About", href: "/about", current: false },
 
   { name: "Games", href: "/games", current: false },
-  { name: "Features", href: "#features-section", current: false },
+  { name: "Contact", href: "/contact", current: false },
 ];
 
 function classNames(...classes: string[]) {
@@ -37,7 +37,7 @@ const Navbar = () => {
             <div className="flex flex-1 items-center sm:justify-between">
               {/* LOGO */}
 
-              <div className="flex flex-shrink-0 items-center">
+              <Link href={'/'} className="flex  flex-shrink-0 items-center">
                 <Image width={300} height={300}
                   className="block h-10 w-20px lg:hidden"
                   src={"/images/Logo/logo.svg"}
@@ -48,7 +48,7 @@ const Navbar = () => {
                   src={"/images/Logo/logo.svg"}
                   alt="Crypto-Logo"
                 />
-              </div>
+              </Link>
 
               {/* LINKS */}
 

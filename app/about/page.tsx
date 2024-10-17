@@ -10,11 +10,11 @@ const Page = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-800 text-white py-12 px-6">
+    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-800 text-white  px-6">
       <div style={{ zIndex: '-1' }} className="layer top-0"></div>
       <div style={{ backdropFilter: 'blur(10px)' }}>
       
-      <div className="bg-gray-700 rounded-lg mt-16 shadow-lg p-8  w-full ">
+      <div className="bg-gray-700 pt-24 rounded-lg mt-16 shadow-lg p-8  w-full ">
         {/* Page Header */}
         <h1 className="text-4xl font-bold text-center text-blue-400 mb-4">
           Free Social Gaming Experience

@@ -1,87 +1,66 @@
+// pages/InfoComponent.tsx
 "use client";
 import Image from "next/image";
-import { Disclosure } from "@headlessui/react";
-import { ChevronUpIcon } from "@heroicons/react/20/solid";
 
-interface faqdata {
-  heading: string;
-  subheading: string;
+interface InfoSection {
+  title: string;
+  content: string;
 }
 
-const faqdata: faqdata[] = [
+const infoSections: InfoSection[] = [
   {
-    heading: "1. What Are Social Casino Games?",
-    subheading:
-      "Social casino games are mostly free-to-play games that imitate the gambling experience without offering a real cash payout. These gamers play exclusively with virtual in-app currency",
+    title: "What Are Social Casino Games?",
+    content:
+      "Social casino games are free-to-play games that simulate casino-style gaming experiences. Unlike traditional casino games, they use virtual currency, so there is no actual cash payout or financial risk involved.",
   },
   {
-    heading: "2. Do Social Casino Games Require Real Money?",
-    subheading:
-      "No, social casino games do not require real money. They are free-to-play and provide virtual currency for in-game activities. Players cannot win real money, making these games purely for fun and entertainment.",
+    title: "Benefits of Social Casino Games",
+    content:
+      "These games offer entertainment and social interaction without the need for real money. They provide players with an opportunity to enjoy popular casino-style games while connecting with friends, sharing achievements, and competing on leaderboards.",
   },
   {
-    heading: "3. Why Do People Play Social Casino Games?",
-    subheading:
-      "People play social casino games for various reasons including entertainment, social interaction, and the thrill of simulated gambling without the financial risk. These games often feature engaging graphics, themes, and the opportunity to connect with friends.",
+    title: "Popular Types of Social Casino Games",
+    content:
+      "Social casino games include a wide range of game types such as slots, poker, and blackjack. Players can enjoy these games on various devices and participate in daily challenges, quests, and events for rewards within the game.",
   },
   {
-    heading: "4. How Safe Are Social Casino Games?",
-    subheading:
-      'Social casino games are generally safe as they do not involve real money transactions. However, players should be mindful of in-app purchases for virtual currency, which can add up if not monitored. It"s important to play responsibly and within personal spending limits.',
+    title: "Accessibility and Availability",
+    content:
+      "Social casino games are widely available on mobile devices, tablets, and computers. Many games can be accessed through apps or web browsers, allowing for convenient, on-the-go play. These games are generally free to download and play.",
   },
-  {
-    heading: "5. Can I play social casino games on my mobile device?",
-    subheading:
-      "Absolutely! Most social casino games are available on mobile devices, including smartphones and tablets. They can be downloaded as apps or accessed through a web browser, providing convenient, on-the-go gaming.",
-  },
+  
 ];
 
-const Faq = () => {
+const InfoComponent = () => {
   return (
-    <div className="my-20 px-6" id="faq-section">
-      <h3 className="text-center text-3xl lg:text-5xl font-bold text-offwhite mb-3">
-        Frequently Asked Questions
+    <div className="my-20 px-6" id="info-section">
+      <h3 className="text-center text-3xl lg:text-5xl font-bold text-offwhite mb-6">
+        Learn More About Social Casino Games
       </h3>
-      <p className="text-center lg:text-lg font-normal text-bluish">
-        These FAQs provide a helpful overview for anyone interested in exploring
-        the world of social casino games.
+      <p className="text-center lg:text-lg font-normal text-bluish ">
+        Discover various aspects of social casino games, including their benefits, accessibility, and safety.
       </p>
 
       <div className="mx-auto max-w-7xl flex flex-col items-center">
         {/* Image Section */}
-        <div className="w-full flex justify-center my-8">
+        {/* <div className="w-full flex justify-center my-8">
           <Image
-            src={"/images/Faq/faq.svg"}
-            alt="faq-image"
+            src="/images/Info/infographic.svg"
+            alt="info-image"
             width={941}
             height={379}
           />
-        </div>
+        </div> */}
 
-        {/* FAQ Section */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 w-full px-4 pt-16">
-          {faqdata.map((item, i) => (
+        {/* Informational Sections */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 w-full px-4 pt-8">
+          {infoSections.map((section, index) => (
             <div
-              className="w-full max-w-5xl rounded-2xl bg-blue py-6 px-4 mb-5"
-              key={i}
+              className="bg-[#2323239d] rounded-lg p-6 shadow-md text-offwhite"
+              key={index}
             >
-              <Disclosure>
-                {({ open }) => (
-                  <>
-                    <Disclosure.Button className="flex w-full justify-between rounded-lg text-offwhite sm:px-4 sm:py-2 text-left md:text-xl font-medium">
-                      <span>{item.heading}</span>
-                      <ChevronUpIcon
-                        className={`${
-                          open ? "rotate-180 transform" : ""
-                        } h-5 w-5 text-purple-500`}
-                      />
-                    </Disclosure.Button>
-                    <Disclosure.Panel className="px-4 pt-4 pb-2 md:text-md text-bluish font-normal opacity-50">
-                      {item.subheading}
-                    </Disclosure.Panel>
-                  </>
-                )}
-              </Disclosure>
+              <h4 className="text-2xl font-semibold mb-4">{section.title}</h4>
+              <p className="text-md text-bluish font-normal opacity-90">{section.content}</p>
             </div>
           ))}
         </div>
@@ -90,4 +69,4 @@ const Faq = () => {
   );
 };
 
-export default Faq;
+export default InfoComponent;
