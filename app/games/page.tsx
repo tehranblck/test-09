@@ -5,11 +5,8 @@ import { useRouter } from 'next/navigation';
 import Button from '../components/Button/Button';
 
 const VideoPoker = () => {
-  const router = useRouter();
 
-  const navigateToGame = () => {
-    router.push('/play-game');
-  };
+
 
   return (
     <div >
@@ -24,7 +21,7 @@ const VideoPoker = () => {
         {/* Game Image */}
         <div className="flex justify-center mb-6">
           <Image
-            src="/images/Logo/videopoker.png" // Replace with the actual image path
+            src="/images/Logo/videopoker.png" 
             alt="Video Poker Game"
             width={600}
             height={300}
@@ -85,9 +82,9 @@ const VideoPoker = () => {
         </section>
 
         {/* Play Now Button */}
-        <div className="flex justify-center mt-8">
+        <div  className="flex  justify-center mt-8">
          
-         <Button buttonText="Play" href={'/game/index.html'}/>
+         <Button buttonText="Play"  href={'/game/index.html'}/>
         </div>
       </div>
     </div>

@@ -22,7 +22,7 @@ const Banner = () => {
           <div className="flex justify-center items-center flex-col-reverse">
             {/* <div className="arrowTwo"></div> */}
             <div className="col-span-7">
-              <h1 className="text-3xl lg:text-6xl font-bold mb-5 text-white md:4px md:text-center text-center w-70%">
+              <h1 className="text-3xl lg:text-6xl font-bold mb-5 !backdrop-brightness-50 text-white md:4px md:text-center text-center w-70%">
                 Find Your Best Social Casino Game
               </h1>
               <p className="text-white md:text-sm space-x-1 font-normal mb-10 md:text-center text-center">

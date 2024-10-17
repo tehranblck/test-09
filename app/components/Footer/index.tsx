@@ -60,8 +60,8 @@ const footer = () => {
               {socialLinks.map((items, i) => (
                 <Link href={items.href} key={i}>
                   <Image
-                  width={400}
-                  height={400}
+                  width={40}
+                  height={40}
                     src={items.imgsrc}
                     alt={items.imgsrc}
                     className="footer-icons"
