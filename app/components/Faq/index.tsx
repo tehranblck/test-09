@@ -16,7 +16,7 @@ const infoSections: InfoSection[] = [
   {
     title: "Benefits of Social Casino Games",
     content:
-      "These games offer entertainment and social interaction without the need for real money. They provide players with an opportunity to enjoy popular casino-style games while connecting with friends, sharing achievements, and competing on leaderboards.",
+      "These games offer entertainment and social interaction without the need for  anything. They provide players with an opportunity to enjoy popular casino-style games while connecting with friends, sharing achievements, and competing on leaderboards.",
   },
   {
     title: "Popular Types of Social Casino Games",
