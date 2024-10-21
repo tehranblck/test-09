@@ -4,8 +4,8 @@ import Navbar from "./components/Navbar/index";
 import Footer from "./components/Footer/index";
 
 export const metadata = {
-  title: "Social Casino",
-  description: "Best Social Casino",
+  title: "Soziales Casino",
+  description: "Soziales Casino Deutschland",
   icons: {
     icon: "/favicon.svg",
   },
