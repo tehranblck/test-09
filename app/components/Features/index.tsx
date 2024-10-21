@@ -45,7 +45,7 @@ const Features = () => {
           Die zuverlässigste Website für Informationen zu Social-Casino-Spielen
           </h2>
           <p className="lg:text-lg font-normal text-bluish text-center md:text-start">
-          Ihre Sicherheit und Ihr Vertrauen stehen bei yourgamedestination.org an erster Stelle. Anstatt Casinospiele anzubieten, konzentrieren wir uns darauf, Benutzer über Social-Casino-Spiele zu informieren und die beliebtesten hervorzuheben. Wir haben fortschrittliche Sicherheitsverfahren implementiert, um sicherzustellen, dass Ihre Daten immer geschützt sind. Entdecken Sie unsere geprüften Bewertungen, um wertvolle Informationen über die besten Social-Casino-Spiele in einer sicheren Umgebung zu erhalten.
+          Ihre Sicherheit und Ihr Vertrauen stehen bei zockerwelt-de.com an erster Stelle. Anstatt Casinospiele anzubieten, konzentrieren wir uns darauf, Benutzer über Social-Casino-Spiele zu informieren und die beliebtesten hervorzuheben. Wir haben fortschrittliche Sicherheitsverfahren implementiert, um sicherzustellen, dass Ihre Daten immer geschützt sind. Entdecken Sie unsere geprüften Bewertungen, um wertvolle Informationen über die besten Social-Casino-Spiele in einer sicheren Umgebung zu erhalten.
           </p>
         </div>
         {/* Column-2 */}

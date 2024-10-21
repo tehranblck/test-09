@@ -19,7 +19,7 @@ const Banner = () => {
               Finde das beste Social-Casino-Spiel
               </h1>
               <p className="text-white md:text-sm space-x-1 font-normal mb-10 text-center">
-              Willkommen auf yourgamedestination.org, dem besten Ort, um Rezensionen über Social-Casino-Spiele zu finden! Unsere Website widmet sich der Bereitstellung aufschlussreicher und fesselnder Bewertungen einer Vielzahl beliebter Casino-ähnlicher Spiele. Wir konzentrieren uns auf Spiele, die ausschließlich zur Unterhaltung dienen und es den Nutzern ermöglichen, Poker, Blackjack, Slots und andere Spiele zu spielen, ohne etwas zu riskieren. Entdecke das beste Social-Casino-Spiel, indem du unsere Rezensionen liest, und genieße ein risikofreies, angenehmes und sicheres Spielerlebnis.
+              Willkommen auf zockerwelt-de.com, dem besten Ort, um Rezensionen über Social-Casino-Spiele zu finden! Unsere Website widmet sich der Bereitstellung aufschlussreicher und fesselnder Bewertungen einer Vielzahl beliebter Casino-ähnlicher Spiele. Wir konzentrieren uns auf Spiele, die ausschließlich zur Unterhaltung dienen und es den Nutzern ermöglichen, Poker, Blackjack, Slots und andere Spiele zu spielen, ohne etwas zu riskieren. Entdecke das beste Social-Casino-Spiel, indem du unsere Rezensionen liest, und genieße ein risikofreies, angenehmes und sicheres Spielerlebnis.
               </p>
 
               {/* Centered Button */}

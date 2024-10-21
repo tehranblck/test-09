@@ -21,12 +21,7 @@ const products: ProductType[] = [
   },
 ];
 
-const socialLinks: Social[] = [
-  { imgsrc: "/images/Footer/insta.svg", href: "https://instagram.com/" },
-  { imgsrc: "/images/Footer/dribble.svg", href: "https://dribble.com/" },
-  { imgsrc: "/images/Footer/twitter.svg", href: "https://twitter.com/" },
-  { imgsrc: "/images/Footer/youtube.svg", href: "https://youtube.com/" },
-];
+
 
 const footer = () => {
   return (
@@ -47,21 +42,9 @@ const footer = () => {
             <h1 className="text-white font-bold mb-5">Haftungsausschluss</h1>
             <h3 className="text-lightblue text-sm font-normal leading-6 mb-4 lg:mb-16">
               {" "}
-              Auf yourgamedestination.org konzentrieren wir uns darauf, einen sicheren und unterhaltsamen Raum für Spieler zu schaffen, um Social-Casino-Spiele ohne Geldeinsatz zu erkunden. Wir sind keine Partner oder Aggregatoren; stattdessen ist es unser Ziel, Benutzer über Social-Casino-Spiele aufzuklären und Informationen über beliebte Optionen bereitzustellen. Unsere Plattform ist darauf ausgerichtet, wertvolle Einblicke und Bewertungen anzubieten, ohne Zahlungen oder sensible Informationen anzufordern. Es ist wichtig zu beachten, dass das Gewinnen in Social-Casino-Spielen keine Gewinnaussichten in Echtgeld-Casinos garantiert. Viel Spaß beim Durchstöbern unserer Inhalte und beim Entdecken der besten Social-Casino-Spiele ohne Risiken!
+              Auf zockerwelt-de.com konzentrieren wir uns darauf, einen sicheren und unterhaltsamen Raum für Spieler zu schaffen, um Social-Casino-Spiele ohne Geldeinsatz zu erkunden. Wir sind keine Partner oder Aggregatoren; stattdessen ist es unser Ziel, Benutzer über Social-Casino-Spiele aufzuklären und Informationen über beliebte Optionen bereitzustellen. Unsere Plattform ist darauf ausgerichtet, wertvolle Einblicke und Bewertungen anzubieten, ohne Zahlungen oder sensible Informationen anzufordern. Es ist wichtig zu beachten, dass das Gewinnen in Social-Casino-Spielen keine Gewinnaussichten in Echtgeld-Casinos garantiert. Viel Spaß beim Durchstöbern unserer Inhalte und beim Entdecken der besten Social-Casino-Spiele ohne Risiken!
             </h3>
-            <div className="flex gap-4">
-              {socialLinks.map((items, i) => (
-                <Link href={items.href} key={i}>
-                  <Image
-                  width={40}
-                  height={40}
-                    src={items.imgsrc}
-                    alt={items.imgsrc}
-                    className="footer-icons"
-                  />
-                </Link>
-              ))}
-            </div>
+            
           </div>
 
           {/* CLOUMN-2/3 */}
