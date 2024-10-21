@@ -62,7 +62,7 @@ const Page: React.FC = () => {
 
           <h3 className="text-xl font-semibold mt-6 mb-2">Haftungsausschluss</h3>
           <p className="mb-4">
-            Unsere Website wird "wie gesehen" und "wie verfügbar" bereitgestellt, ohne jegliche Gewährleistungen. Wir garantieren nicht, dass die Website fehlerfrei oder sicher ist.
+            Unsere Website wird &quot;wie gesehen&quot; und &quot;wie verfügbar&quot; bereitgestellt, ohne jegliche Gewährleistungen. Wir garantieren nicht, dass die Website fehlerfrei oder sicher ist.
           </p>
 
           <h3 className="text-xl font-semibold mt-6 mb-2">Haftungsbeschränkung</h3>
