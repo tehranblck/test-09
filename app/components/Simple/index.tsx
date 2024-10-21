@@ -8,16 +8,10 @@ const Simple = () => {
       <div className="simplefive"></div>
       <div className="mx-auto max-w-5xl py-24 px-6 ">
         <h3 className="text-center text-offwhite text-xl lg:text-5xl font-semibold mb-6">
-          Explore Our games  With Us!
+          Entdecke Unsere Spiele Mit Uns!
         </h3>
         <p className="text-center text-bluish text-lg font-normal mb-8">
-          Immerse yourself in a world of excitement and endless entertainment
-          with our in-depth reviews of the top social casino games. Whether
-          you&apos;re an experienced player or new to the scene, we have something
-          for everyone. Our platform showcases the latest releases, timeless
-          favorites, and hidden treasures that will keep you engaged for
-          hours—all at no cost. Check out our reviews to discover your next
-          favorite game!
+        Mit unseren umfassenden Bewertungen der besten Social-Casino-Spiele können Sie sich in einer Welt voller Nervenkitzel und endlosem Spaß verlieren. Jeder kann etwas finden, das ihm gefällt, unabhängig von seinem Erfahrungsstand. Unsere Plattform bietet kostenlosen Zugang zu den neuesten Veröffentlichungen, klassischen Klassikern und verborgenen Schätzen, die Sie stundenlang beschäftigen werden. Finden Sie Ihr nächstes Lieblingsspiel, indem Sie unsere Rezensionen lesen!
         </p>
       </div>
       <div className="simplesix"></div>

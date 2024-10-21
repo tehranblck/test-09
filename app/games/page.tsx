@@ -6,8 +6,6 @@ import Button from '../components/Button/Button';
 
 const VideoPoker = () => {
 
-
-
   return (
     <div >
         <div style={{zIndex:'-1'}} className='layer'></div>
@@ -22,7 +20,7 @@ const VideoPoker = () => {
         <div className="flex justify-center mb-6">
           <Image
             src="/images/Logo/videopoker.png" 
-            alt="Video Poker Game"
+            alt="Video Poker Spiel"
             width={600}
             height={300}
             className="rounded-lg shadow-md"
@@ -32,51 +30,51 @@ const VideoPoker = () => {
         {/* Introduction Section */}
         <section className="space-y-4">
           <h2 className="text-2xl font-semibold text-blue-400">
-            What is Video Poker?
+            Was ist Video Poker?
           </h2>
           <p className="text-gray-300 leading-relaxed">
-            Video poker combines the strategy of traditional card games with the ease of digital play. You get to decide which cards to keep and which to discard, directly influencing the outcome. This makes video poker a great choice for those who enjoy strategic decision-making.
+            Video Poker kombiniert die Strategie traditioneller Kartenspiele mit der Einfachheit des digitalen Spiels. Du entscheidest, welche Karten du behältst und welche du ablegst, was das Ergebnis direkt beeinflusst. Das macht Video Poker zu einer großartigen Wahl für diejenigen, die strategische Entscheidungen mögen.
           </p>
         </section>
 
         {/* How to Play Section */}
         <section className="space-y-4">
-          <h2 className="text-2xl font-semibold text-blue-400">How to Play</h2>
+          <h2 className="text-2xl font-semibold text-blue-400">Wie spielt man?</h2>
           <ul className="list-decimal list-inside text-gray-300 space-y-2">
-            <li>Place your bet and begin the game.</li>
-            <li>Receive five cards and decide which to keep.</li>
-            <li>Replace discarded cards and reveal your final hand.</li>
-            <li>Compare your hand to the paytable to see if you’ve won.</li>
+            <li>Platziere deinen Einsatz und starte das Spiel.</li>
+            <li>Erhalte fünf Karten und entscheide, welche du behältst.</li>
+            <li>Tausche die abgelegten Karten aus und enthülle deine endgültige Hand.</li>
+            <li>Vergleiche deine Hand mit der Auszahlungstabelle, um zu sehen, ob du gewonnen hast.</li>
           </ul>
         </section>
 
         {/* Payouts and Winning Hands Section */}
         <section className="space-y-4">
           <h2 className="text-2xl font-semibold text-blue-400">
-            Payouts and Winning Hands
+            Auszahlungen und Gewinnende Hände
           </h2>
           <p className="text-gray-300 leading-relaxed">
-            Each hand offers different payouts, depending on the combination. Winning hands range from a Pair, Three of a Kind, to higher hands like Four of a Kind or a Royal Flush, each with increasing payouts.
+            Jede Hand bietet unterschiedliche Auszahlungen, abhängig von der Kombination. Gewinnende Hände reichen von einem Paar, Drilling bis hin zu höheren Händen wie Vierlinge oder einem Royal Flush, die jeweils höhere Auszahlungen bieten.
           </p>
         </section>
 
         {/* Types of Video Poker Section */}
         <section className="space-y-4">
           <h2 className="text-2xl font-semibold text-blue-400">
-            Types of Video Poker
+            Arten von Video Poker
           </h2>
           <p className="text-gray-300 leading-relaxed">
-            Common versions include:
+            Zu den häufigsten Versionen gehören:
           </p>
           <ul className="list-disc list-inside text-gray-300 space-y-2">
             <li>
-              <strong>Jacks or Better:</strong> Win with a pair of jacks or higher.
+              <strong>Buben oder besser:</strong> Gewinne mit einem Paar Buben oder höher.
             </li>
             <li>
-              <strong>Deuces Wild:</strong> All twos act as wild cards.
+              <strong>Deuces Wild:</strong> Alle Zweien fungieren als Joker.
             </li>
             <li>
-              <strong>Joker Poker:</strong> Includes a joker card as an additional wild card.
+              <strong>Joker Poker:</strong> Beinhaltet eine Joker-Karte als zusätzlichen Joker.
             </li>
           </ul>
         </section>
@@ -84,7 +82,7 @@ const VideoPoker = () => {
         {/* Play Now Button */}
         <div  className="flex  justify-center mt-8">
          
-         <Button buttonText="Play"  href={'/game/index.html'}/>
+         <Button buttonText="Spielen"  href={'/game/index.html'}/>
         </div>
       </div>
     </div>

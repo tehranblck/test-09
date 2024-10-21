@@ -3,82 +3,82 @@ import React from 'react';
 
 const Page: React.FC = () => {
   return (
-    <div className="min-h-screen   text-white">
+    <div className="min-h-screen text-white">
       <div className="layer -z-10"></div>
-      <div className="  pt-32 backdrop-blur-xl mx-auto bg-transparent p-6 rounded-lg shadow-md">
-        <h1 className="text-3xl font-bold text-center text-blue-500 mb-8">Privacy Policy & Terms of Use</h1>
+      <div className="container mx-auto pt-32 backdrop-blur-xl bg-transparent p-6 rounded-lg shadow-md">
+        <h1 className="text-3xl font-bold text-center text-blue-500 mb-8">Datenschutzrichtlinie & Nutzungsbedingungen</h1>
 
-        {/* Privacy Policy Section */}
+        {/* Datenschutzrichtlinie */}
         <section className="mb-12">
-          <h2 className="text-2xl font-semibold mb-4">Privacy Policy</h2>
+          <h2 className="text-2xl font-semibold mb-4">Datenschutzrichtlinie</h2>
           <p className="mb-4">
-            Your privacy is important to us. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website. By accessing or using our website, you agree to this Privacy Policy. If you do not agree, please do not use our website.
+            Ihre Privatsphäre ist uns wichtig. Diese Datenschutzrichtlinie erklärt, wie wir Ihre Informationen sammeln, verwenden, offenlegen und schützen, wenn Sie unsere Website besuchen. Durch den Zugriff auf unsere Website stimmen Sie dieser Datenschutzrichtlinie zu. Wenn Sie nicht einverstanden sind, nutzen Sie unsere Website bitte nicht.
           </p>
-          <h3 className="text-xl font-semibold mt-6 mb-2">Information We Collect</h3>
+          <h3 className="text-xl font-semibold mt-6 mb-2">Informationen, die wir sammeln</h3>
           <p className="mb-4">
-            We may collect both personal and non-personal information from you. Personal information includes details that can be used to identify you, such as:
+            Wir können sowohl persönliche als auch nicht persönliche Informationen von Ihnen sammeln. Persönliche Informationen umfassen Daten, die zur Identifizierung Ihrer Person verwendet werden können, wie:
           </p>
           <ul className="list-disc list-inside mb-4">
-            <li>Contact Information: Email address, phone number, or mailing address.</li>
-            <li>Usage Data: Information about how you use our website, including IP addresses, browser type, and page views.</li>
+            <li>Kontaktinformationen: E-Mail-Adresse, Telefonnummer oder Postanschrift.</li>
+            <li>Nutzungsdaten: Informationen darüber, wie Sie unsere Website nutzen, einschließlich IP-Adressen, Browsertyp und Seitenaufrufe.</li>
           </ul>
 
-          <h3 className="text-xl font-semibold mt-6 mb-2">How We Use Your Information</h3>
+          <h3 className="text-xl font-semibold mt-6 mb-2">Wie wir Ihre Informationen verwenden</h3>
           <p className="mb-4">
-            We use the information we collect for various purposes, including:
+            Wir verwenden die gesammelten Informationen für verschiedene Zwecke, einschließlich:
           </p>
           <ul className="list-disc list-inside mb-4">
-            <li>To operate and maintain our website.</li>
-            <li>To communicate with you and respond to inquiries.</li>
-            <li>To analyze usage trends and improve our services.</li>
+            <li>Zum Betrieb und zur Wartung unserer Website.</li>
+            <li>Zur Kommunikation mit Ihnen und zur Beantwortung von Anfragen.</li>
+            <li>Zur Analyse von Nutzungstrends und zur Verbesserung unserer Dienste.</li>
           </ul>
 
-          <h3 className="text-xl font-semibold mt-6 mb-2">How We Share Your Information</h3>
+          <h3 className="text-xl font-semibold mt-6 mb-2">Wie wir Ihre Informationen weitergeben</h3>
           <p className="mb-4">
-            We do not sell your personal information. We may share it with:
+            Wir verkaufen Ihre persönlichen Daten nicht. Wir können sie jedoch mit folgenden Parteien teilen:
           </p>
           <ul className="list-disc list-inside mb-4">
-            <li>Service providers for email, hosting, or analytics services.</li>
-            <li>Public authorities, if required by law.</li>
+            <li>Dienstleistern für E-Mail-, Hosting- oder Analysedienste.</li>
+            <li>Öffentlichen Behörden, wenn gesetzlich erforderlich.</li>
           </ul>
         </section>
 
-        {/* Terms of Use Section */}
+        {/* Nutzungsbedingungen */}
         <section className="mb-12">
-          <h2 className="text-2xl font-semibold mb-4">Terms of Use</h2>
+          <h2 className="text-2xl font-semibold mb-4">Nutzungsbedingungen</h2>
           <p className="mb-4">
-            By accessing and using our website, you agree to be bound by these Terms of Use. If you do not agree, you must not use our website.
+            Durch den Zugriff auf und die Nutzung unserer Website erklären Sie sich mit diesen Nutzungsbedingungen einverstanden. Wenn Sie nicht einverstanden sind, dürfen Sie unsere Website nicht nutzen.
           </p>
 
-          <h3 className="text-xl font-semibold mt-6 mb-2">Intellectual Property Rights</h3>
+          <h3 className="text-xl font-semibold mt-6 mb-2">Urheberrechte</h3>
           <p className="mb-4">
-            All content, features, and functionality on this website are owned by us or our licensors and are protected by intellectual property rights.
+            Alle Inhalte, Funktionen und Funktionalitäten auf dieser Website sind unser Eigentum oder das unserer Lizenzgeber und durch Urheberrechte geschützt.
           </p>
 
-          <h3 className="text-xl font-semibold mt-6 mb-2">User Conduct</h3>
+          <h3 className="text-xl font-semibold mt-6 mb-2">Nutzerverhalten</h3>
           <p className="mb-4">
-            You agree to use our website only for lawful purposes. Prohibited activities include unauthorized access, transmitting harmful content, and disrupting the website&apos;s functionality.
+            Sie stimmen zu, unsere Website nur für rechtmäßige Zwecke zu nutzen. Verbotene Aktivitäten umfassen unbefugten Zugriff, das Übertragen von schädlichen Inhalten und die Störung der Funktionalität der Website.
           </p>
 
-          <h3 className="text-xl font-semibold mt-6 mb-2">Disclaimer</h3>
+          <h3 className="text-xl font-semibold mt-6 mb-2">Haftungsausschluss</h3>
           <p className="mb-4">
-            Our website is provided &quot;as is&quot; and &quot;as available,&quot; without any warranties. We do not guarantee that the website will be error-free or secure.
+            Unsere Website wird "wie gesehen" und "wie verfügbar" bereitgestellt, ohne jegliche Gewährleistungen. Wir garantieren nicht, dass die Website fehlerfrei oder sicher ist.
           </p>
 
-          <h3 className="text-xl font-semibold mt-6 mb-2">Limitation of Liability</h3>
+          <h3 className="text-xl font-semibold mt-6 mb-2">Haftungsbeschränkung</h3>
           <p className="mb-4">
-            We will not be liable for any damages resulting from your use of our website, including indirect or consequential damages.
+            Wir haften nicht für Schäden, die aus der Nutzung unserer Website resultieren, einschließlich indirekter oder Folgeschäden.
           </p>
         </section>
 
-        {/* Contact Information */}
+        {/* Kontaktinformationen */}
         <section className="mb-12">
-          <h2 className="text-2xl font-semibold mb-4">Contact Us</h2>
+          <h2 className="text-2xl font-semibold mb-4">Kontaktieren Sie uns</h2>
           <p className="mb-4">
-            If you have any questions or concerns regarding our Privacy Policy or Terms of Use, please contact us at:
+            Wenn Sie Fragen oder Bedenken bezüglich unserer Datenschutzrichtlinie oder Nutzungsbedingungen haben, kontaktieren Sie uns bitte unter:
           </p>
           <ul className="list-inside">
-            <li>Email: contact@yourgamedestination.com</li>
+            <li>Email: contact@zockerwelt-de.com</li>
           </ul>
         </section>
       </div>

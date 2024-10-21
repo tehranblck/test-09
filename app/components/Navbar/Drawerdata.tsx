@@ -8,11 +8,13 @@ interface NavigationItem {
 }
 
 const navigation: NavigationItem[] = [
-  { name: "Home", href: "#home-section", current: false },
-  { name: "Game", href: "#game-section", current: false },
-  { name: "Features", href: "#features-section", current: false },
-  { name: "FAQ", href: "#faq-section", current: false },
+  { name: "Home", href: "/", current: false },
+  { name: "About", href: "/about", current: false },
+  { name: "Games", href: "/games", current: false },
+  { name: "Privacy & Terms", href: "/privacy", current: false },
+  { name: "Contact", href: "/contact", current: false },
 ];
+
 
 function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(" ");

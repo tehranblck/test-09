@@ -7,7 +7,7 @@ const Banner = () => {
   const [isOpen, setOpen] = useState(false);
 
   return (
-    <div className="bg-image relative" id="home-section">
+    <div className="bg-image pt-16 mb-16 sm:mt-0 relative" id="home-section">
       <div className="arrowOne"></div>
       <div className="radial-banner hidden lg:block"></div>
 
@@ -16,22 +16,15 @@ const Banner = () => {
           <div className="flex justify-center items-center flex-col-reverse">
             <div className="col-span-7">
               <h1 className="text-3xl lg:text-6xl font-bold mb-5 !backdrop-brightness-50 text-white text-center">
-                Find Your Best Social Casino Game
+              Finde das beste Social-Casino-Spiel
               </h1>
               <p className="text-white md:text-sm space-x-1 font-normal mb-10 text-center">
-                Welcome to yourgamedestination.org, the ultimate destination for
-                social casino game reviews! Our platform is dedicated to
-                providing insightful and engaging reviews of a wide variety of
-                popular casino-style games. We focus on games that are purely
-                for entertainment purposes, allowing players to enjoy slots,
-                poker, blackjack, and more without the need for real money.
-                Explore our reviews to discover the best social casino game and
-                enjoy a safe, fun, and risk-free gaming experience.
+              Willkommen auf yourgamedestination.org, dem besten Ort, um Rezensionen über Social-Casino-Spiele zu finden! Unsere Website widmet sich der Bereitstellung aufschlussreicher und fesselnder Bewertungen einer Vielzahl beliebter Casino-ähnlicher Spiele. Wir konzentrieren uns auf Spiele, die ausschließlich zur Unterhaltung dienen und es den Nutzern ermöglichen, Poker, Blackjack, Slots und andere Spiele zu spielen, ohne etwas zu riskieren. Entdecke das beste Social-Casino-Spiel, indem du unsere Rezensionen liest, und genieße ein risikofreies, angenehmes und sicheres Spielerlebnis.
               </p>
 
               {/* Centered Button */}
               <div className="flex justify-center">
-                <Button buttonText="Play" href="/game/index.html" />
+                <Button buttonText="Spielen" href="/game/index.html" />
               </div>
             </div>
 

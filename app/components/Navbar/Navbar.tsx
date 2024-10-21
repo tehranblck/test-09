@@ -15,11 +15,11 @@ interface NavigationItem {
 }
 
 const navigation: NavigationItem[] = [
-  { name: "Home", href: "/", current: false },
-  { name: "About", href: "/about", current: false },
-
-  { name: "Games", href: "/games", current: false },
-  { name: "Contact", href: "/contact", current: false },
+  { name: "Startseite", href: "/", current: false },
+  { name: "Über Uns", href: "/about", current: false },
+  { name: "Spiele", href: "/games", current: false },
+  { name: "Datenschutz & Bedingungen", href: "/privacy", current: false },
+  { name: "Kontakt", href: "/contact", current: false },
 ];
 
 function classNames(...classes: string[]) {
@@ -30,9 +30,9 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = React.useState(false);
 
   return (
-    <Disclosure as="nav" className="navbar bg-transparent w-full absolute top-0 z-50">
+    <Disclosure as="nav" className="navbar  bg-transparent w-full absolute top-0 z-50">
       <>
-        <div className="mx-auto  p-3 md:p-4 lg:px-8">
+        <div className="mx-auto container  p-3 md:p-4 lg:px-8">
           <div className="relative flex h-12 sm:h-20 items-center">
             <div className="flex flex-1 items-center sm:justify-between">
               {/* LOGO */}
@@ -41,12 +41,12 @@ const Navbar = () => {
                 <Image width={100} height={100}
                   className="block h-10 w-20px lg:hidden"
                   src={"/images/Logo/logo.svg"}
-                  alt="Crypto-Logo"
+                  alt="Krypto-Logo"
                 />
                 <Image width={100} height={100}
                   className="hidden h-48px w-48px lg:block"
                   src={"/images/Logo/logo.svg"}
-                  alt="Crypto-Logo"
+                  alt="Krypto-Logo"
                 />
               </Link>
 
@@ -71,7 +71,7 @@ const Navbar = () => {
                   ))}
                 </div>
               </div>
-             <Button buttonText="Play" href={'/game/index.html'}/>
+             <Button  buttonText="Spielen" href={'/game/index.html'}/>
              
               {/* <Contactusform /> */}
             </div>

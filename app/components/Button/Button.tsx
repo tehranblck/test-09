@@ -10,7 +10,7 @@ interface ButtonProps {
 const Button: React.FC<ButtonProps> = ({ buttonText,href }) => {
   return (
     <StyledWrapper>
-      <Link href={href}  className="button">{buttonText}</Link>
+      <Link href={href}  className="button mx-8">{buttonText}</Link>
     </StyledWrapper>
   );
 };

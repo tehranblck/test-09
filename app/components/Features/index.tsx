@@ -10,21 +10,21 @@ interface featuresdata {
 const featuresdata: featuresdata[] = [
   {
     imgSrc: "/images/Features/featureOne.svg",
-    heading: "Security",
+    heading: "Sicherheit",
     subheading:
-      "Your personal information is safeguarded with advanced encryption and security protocols, guaranteeing a secure browsing experience.",
+      "Fortschrittliche Verschlüsselung und Sicherheitsverfahren schützen Ihre persönlichen Daten und gewährleisten ein sicheres Online-Erlebnis.",
   },
   {
     imgSrc: "/images/Features/featureTwo.svg",
-    heading: "Informative",
+    heading: "Informativ",
     subheading:
-      "Explore social casino games and discover the most popular ones with no financial commitment required.",
+      "Entdecken Sie die beliebtesten Social-Casino-Spiele, ohne finanzielle Verpflichtungen eingehen zu müssen.",
   },
   {
     imgSrc: "/images/Features/featureThree.svg",
-    heading: "User-Friendly",
+    heading: "Benutzerfreundlich",
     subheading:
-      "Our platform is user-friendly and easy to navigate, allowing you to quickly find and read reviews.",
+      "Unsere Plattform ist einfach zu bedienen und zu navigieren, sodass Sie schnell Rezensionen finden und lesen können.",
   },
 ];
 
@@ -39,19 +39,13 @@ const Features = () => {
         {/* Column-1 */}
         <div>
           <h3 className="feature-font text-lg font-semibold mb-4 text-center md:text-start">
-            FEATURES
+            FUNKTIONEN
           </h3>
           <h2 className="text-offwhite text-3xl lg:text-5xl font-semibold leading-snug mb-6 text-center md:text-start">
-            The Most Trusted Social Casino Information Platform
+          Die zuverlässigste Website für Informationen zu Social-Casino-Spielen
           </h2>
           <p className="lg:text-lg font-normal text-bluish text-center md:text-start">
-            At yourgamedestination.org, your safety and trust are our highest
-            priorities. Rather than offering casino games, we focus on educating
-            users about social casino games and showcasing the most popular
-            ones. We&apos;ve implemented advanced security measures to keep your data
-            secure at all times. Browse our trusted reviews and gain valuable
-            insights into top social casino games in a safe and secure
-            environment.
+          Ihre Sicherheit und Ihr Vertrauen stehen bei yourgamedestination.org an erster Stelle. Anstatt Casinospiele anzubieten, konzentrieren wir uns darauf, Benutzer über Social-Casino-Spiele zu informieren und die beliebtesten hervorzuheben. Wir haben fortschrittliche Sicherheitsverfahren implementiert, um sicherzustellen, dass Ihre Daten immer geschützt sind. Entdecken Sie unsere geprüften Bewertungen, um wertvolle Informationen über die besten Social-Casino-Spiele in einer sicheren Umgebung zu erhalten.
           </p>
         </div>
         {/* Column-2 */}

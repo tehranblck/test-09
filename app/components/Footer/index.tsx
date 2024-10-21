@@ -16,8 +16,8 @@ interface Social {
 const products: ProductType[] = [
   {
     id: 1,
-    section: "Useful Links",
-    link: ["Home", "Games", "Features", "FAQ"],
+    section: "Nützliche Links",
+    link: ["Startseite", "Spiele", "Funktionen", "FAQ"],
   },
 ];
 
@@ -30,13 +30,13 @@ const socialLinks: Social[] = [
 
 const footer = () => {
   return (
-    <footer style={{backdropFilter:"blur(10px)"}}  className=" relative">
-      <div className="radial-bg hidden lg:block"></div>
-      <div className="mx-auto max-w-2xl  pb-16 px-4 sm:px-6 lg:max-w-7xl lg:px-8">
-        <div className="mt-24 grid grid-cols-1 gap-y-10 gap-x-16 sm:grid-cols-2 lg:grid-cols-12 xl:gap-x-8">
+    <footer style={{backdropFilter:"blur(15px)"}}  className=" w-full relative">
+      <div className="  hidden lg:block"></div>
+      <div className="mx-auto bg-[#000000cc]   pb-16 px-4 sm:px-6 py-10 ">
+        <div className="container mx-auto grid grid-cols-1 gap-y-10 gap-x-16 sm:grid-cols-2 lg:grid-cols-12 xl:gap-x-8">
           {/* COLUMN-1 */}
 
-          <div className="col-span-6 lg:mr-14">
+          <div className="col-span-6  lg:mr-14">
             <Image
             width={200}
             height={200}
@@ -44,10 +44,10 @@ const footer = () => {
               src={"/images/Logo/logo.svg"}
               alt="Crypto-Logo"
             />
-            <h1 className="text-white font-bold mb-5">Disclaimer</h1>
+            <h1 className="text-white font-bold mb-5">Haftungsausschluss</h1>
             <h3 className="text-lightblue text-sm font-normal leading-6 mb-4 lg:mb-16">
               {" "}
-              At yourgamedestination.org, we focus on creating a secure and enjoyable space for players to explore social casino games with no money involved. We’re not affiliates or aggregators; instead, our aim is to educate users about social casino games and provide information on popular options. Our platform is dedicated to offering valuable insights and reviews without requesting payment or sensitive information. It&apos;s important to note that winning in social casino games does not imply a win rate in real money casinos. Enjoy browsing our content and discovering top social casino games without any risks!
+              Auf yourgamedestination.org konzentrieren wir uns darauf, einen sicheren und unterhaltsamen Raum für Spieler zu schaffen, um Social-Casino-Spiele ohne Geldeinsatz zu erkunden. Wir sind keine Partner oder Aggregatoren; stattdessen ist es unser Ziel, Benutzer über Social-Casino-Spiele aufzuklären und Informationen über beliebte Optionen bereitzustellen. Unsere Plattform ist darauf ausgerichtet, wertvolle Einblicke und Bewertungen anzubieten, ohne Zahlungen oder sensible Informationen anzufordern. Es ist wichtig zu beachten, dass das Gewinnen in Social-Casino-Spielen keine Gewinnaussichten in Echtgeld-Casinos garantiert. Viel Spaß beim Durchstöbern unserer Inhalte und beim Entdecken der besten Social-Casino-Spiele ohne Risiken!
             </h3>
             <div className="flex gap-4">
               {socialLinks.map((items, i) => (
@@ -87,7 +87,7 @@ const footer = () => {
           ))}
 
           <div className="col-span-4">
-            <h3 className="text-white text-xl font-medium mb-2">Contact Us</h3>
+            <h3 className="text-white text-xl font-medium mb-2">Kontakt</h3>
             <h4 className="text-offwhite text-sm font-normal mb-6 flex gap-2 mt-16">
               <Image
                 src={"/images/Footer/email.svg"}
@@ -95,12 +95,12 @@ const footer = () => {
                 width={20}
                 height={20}
               />
-              contact@yourgamedestination.com
+              contact@zockerwelt-de.com
             </h4>
           </div>
         </div>
       </div>
-      <div className="flex gap-4 flex-wrap justify-center items-center bg-white py-2">
+      <div className="flex gap-4 bg-[#000000cc]  flex-wrap justify-center items-center  py-2">
         <a href="https://www.gamcare.org.uk/">
           <Image
             src={"/gamcare.svg"}
@@ -128,16 +128,16 @@ const footer = () => {
       </div>
       {/* All Rights Reserved */}
 
-      <div className="py-8 px-4 border-t border-t-lightblue">
+      <div className="py-8 px-4 border-t bg-[#000000cc]  border-t-lightblue">
         <h3 className="text-center text-offwhite">
-          @2024 - All Rights Reserved by{" "}
+          @2024 - Alle Rechte vorbehalten von{" "}
           <Link
             href="https://yourgamedestination.com/"
             target="_blank"
             className="text-wrap"
           >
             {" "}
-            yourgamedestination.com
+            zockerwelt-de.com
           </Link>
         </h3>
       </div>

@@ -7,7 +7,7 @@ export const metadata = {
   title: "Social Casino",
   description: "Best Social Casino",
   icons: {
-    icon: "/logo.svg",
+    icon: "/favicon.svg",
   },
 };
 

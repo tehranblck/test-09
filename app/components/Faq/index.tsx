@@ -9,24 +9,24 @@ interface InfoSection {
 
 const infoSections: InfoSection[] = [
   {
-    title: "What Are Social Casino Games?",
+    title: "Was sind Social-Casino-Spiele?",
     content:
-      "Social casino games are free-to-play games that simulate casino-style gaming experiences. Unlike traditional casino games, they use virtual currency, so there is no actual cash payout or financial risk involved.",
+      "Social-Casino-Spiele sind kostenlose Spiele, die Casino-ähnliche Spielerlebnisse simulieren. Im Gegensatz zu traditionellen Casinospielen verwenden sie virtuelle Währungen, sodass es keine tatsächlichen Auszahlungen oder finanziellen Risiken gibt.",
   },
   {
-    title: "Benefits of Our Games",
+    title: "Vorteile unserer Spiele",
     content:
-      "These games offer entertainment and social interaction without the need for real money. They provide players with an opportunity to enjoy popular casino-style games while connecting with friends, sharing achievements, and competing on leaderboards.",
+      "Diese Spiele bieten Unterhaltung und soziale Interaktionen, ohne echtes Geld zu benötigen. Sie bieten den Spielern die Möglichkeit, beliebte Casino-ähnliche Spiele zu genießen, während sie mit Freunden in Kontakt treten, Erfolge teilen und auf Ranglisten konkurrieren.",
   },
   {
-    title: "Popular Types ",
+    title: "Beliebte Spieltypen",
     content:
-      "Social casino games include a wide range of game types such as slots, poker, and blackjack. Players can enjoy these games on various devices and participate in daily challenges, quests, and events for rewards within the game.",
+      "Social-Casino-Spiele umfassen eine Vielzahl von Spieltypen wie Slots, Poker und Blackjack. Spieler können diese Spiele auf verschiedenen Geräten genießen und an täglichen Herausforderungen, Quests und Events teilnehmen, um Belohnungen im Spiel zu erhalten.",
   },
   {
-    title: "Accessibility and Availability",
+    title: "Zugänglichkeit und Verfügbarkeit",
     content:
-      "Social casino games are widely available on mobile devices, tablets, and computers. Many games can be accessed through apps or web browsers, allowing for convenient, on-the-go play. These games are generally free to download and play.",
+      "Social-Casino-Spiele sind auf Mobilgeräten, Tablets und Computern weit verbreitet. Viele Spiele können über Apps oder Webbrowser gespielt werden, was ein bequemes Spielen unterwegs ermöglicht. Diese Spiele sind in der Regel kostenlos herunterzuladen und zu spielen.",
   },
   
 ];
@@ -35,10 +35,10 @@ const InfoComponent = () => {
   return (
     <div className="my-20 px-6" id="info-section">
       <h3 className="text-center text-3xl lg:text-5xl font-bold text-offwhite mb-6">
-        Learn More About Our Games
+        Erfahren Sie mehr über unsere Spiele
       </h3>
       <p className="text-center lg:text-lg font-normal text-bluish ">
-        Discover various aspects of social casino games, including their benefits, accessibility, and safety.
+        Entdecken Sie verschiedene Aspekte von Social-Casino-Spielen, einschließlich ihrer Vorteile, Zugänglichkeit und Sicherheit.
       </p>
 
       <div className="mx-auto max-w-7xl flex flex-col items-center">
