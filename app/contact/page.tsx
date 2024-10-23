@@ -85,7 +85,7 @@ const ContactUs: React.FC = () => {
           Get in Touch
         </h1>
         <p className="text-center text-gray-300 mb-12">
-          Whether you have questions, feedback, or just want to say hello, we're here to help! Fill out the form below and we'll get back to you as soon as possible.
+          Whether you have questions, feedback, or just want to say hello, we&apos;re here to help! Fill out the form below and we&apos;ll get back to you as soon as possible.
         </p>
 
         {/* İletişim Formu */}
@@ -136,7 +136,7 @@ const ContactUs: React.FC = () => {
         ) : (
           <div className="text-center">
             <h2 className="text-3xl font-bold text-green-400 mb-4">Thank you!</h2>
-            <p className="text-gray-300">Your message has been successfully sent. We'll get back to you soon!</p>
+            <p className="text-gray-300">Your message has been successfully sent. We&apos;ll get back to you soon!</p>
           </div>
         )}
 
