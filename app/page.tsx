@@ -20,7 +20,7 @@ export default function Home(props: Props) {
 
 {/* <Companies /> */}
 {/* <Work /> */}
-<Simple />
+{/* <Simple /> */}
 {/* <Table /> */}
 <Features />
 

@@ -4,105 +4,100 @@ import { navigation } from "../nav/nav"; // Navigation verisini içe aktarıyoru
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-white py-12 relative">
-      {/* Container Wrapper */}
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {/* Column 1: Logo & Disclaimer */}
-          <div>
-            <Link href="/" className="flex mb-6">
-              <Image
-                width={150}
-                height={150}
-                src="/images/Logo/logo.svg"
-                alt="Crypto-Logo"
-              />
-            </Link>
-            <h1 className="text-lg font-bold mb-4">Disclaimer</h1>
-            <p className="text-sm text-gray-400 leading-relaxed">
-              At zockerwelt-de.com, we focus on creating a safe and fun space for players to explore social casino games without any monetary investment. Please note, winning in social casino games does not guarantee success in real-money casinos. Enjoy discovering the best social casino games without risks!
-            </p>
-          </div>
+    <footer className="bg-gray-800 text-white py-16 relative">
+      {/* Upper Section: Useful Links and Contact */}
+      <div className="container mx-auto flex flex-col md:flex-row justify-between items-start px-4 sm:px-6 lg:px-8 space-y-8 md:space-y-0">
+        
+        {/* Column 1: Useful Links */}
+        <div className="flex-1">
+          <h2 className="text-lg font-bold mb-4">Explore</h2>
+          <ul className=" flex  gap-2 justify-start items-center">
+            {navigation.map((item) => (
+              <li key={item.name}>
+                <Link
+                  href={item.href}
+                  className="text-sm text-gray-400 hover:text-blue-500 transition"
+                >
+                  {item.name}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
 
-          {/* Column 2: Useful Links */}
-          <div>
-            <h2 className="text-lg font-bold mb-4">Useful Links</h2>
-            <ul className="space-y-4">
-              {navigation.map((item) => (
-                <li key={item.name}>
-                  <Link
-                    href={item.href}
-                    className="text-sm text-gray-400 hover:text-white transition"
-                  >
-                    {item.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Column 3: Contact & Social Media */}
-          <div>
-            <h2 className="text-lg font-bold mb-4">Contact</h2>
-            <div className="flex items-center mb-6">
+        {/* Column 2: Contact */}
+        <div className="flex-1">
+          <h2 className="text-lg font-bold mb-4">Get in Touch</h2>
+          <div className="mb-6">
+            <div className="flex items-center space-x-4">
               <Image
                 src="/images/Footer/email.svg"
                 alt="email-icon"
                 width={24}
                 height={24}
-                className="mr-4"
               />
               <span className="text-sm">contact@zockerwelt-de.com</span>
             </div>
           </div>
         </div>
 
-        {/* Divider */}
-        <div className="border-t border-gray-700 mt-8"></div>
+        {/* Column 3: Logo */}
+        <div className="flex-1 flex justify-end">
+          <Link href="/" className="flex mb-4">
+            <Image
+              width={120}
+              height={120}
+              src="/images/Logo/logo.svg"
+              alt="Crypto-Logo"
+            />
+          </Link>
+        </div>
+      </div>
 
-        {/* Lower Footer */}
-        <div className="py-6 flex flex-col md:flex-row justify-between items-center text-center md:text-left">
-          <div className="flex space-x-6">
-            <a
+      {/* Lower Section: Legal Info */}
+      <div className="mt-12 border-t border-gray-700 pt-8">
+        <div className="container mx-auto flex flex-col md:flex-row justify-between items-center text-center md:text-left px-4 sm:px-6 lg:px-8">
+          <p className="text-sm text-gray-400">
+            ©2024 - All rights reserved by{" "}
+            <Link
+              href="https://yourgamedestination.com/"
+              target="_blank"
+              className="underline hover:text-blue-500"
+            >
+              zockerwelt-de.com
+            </Link>
+          </p>
+
+          <div className="mt-4 md:mt-0 flex items-center justify-center space-x-6">
+            <Link 
               href="https://www.gamcare.org.uk/"
-              className="text-gray-400 hover:text-white transition"
+              className="text-gray-400 hover:text-blue-500 transition"
             >
               <Image
                 src="/gamcare.svg"
                 alt="gamcare-logo"
-                width={120}
-                height={40}
+                width={100}
+                height={100}
               />
-            </a>
-            <a href="/" className="text-gray-400 hover:text-white transition">
+            </Link>
+            <Link href="/" className="text-gray-400 hover:text-blue-500 transition">
               <Image
                 src="/18+disclaimer.svg"
                 alt="18+-logo"
                 width={50}
                 height={50}
               />
-            </a>
-            <a
+            </Link>
+            <Link
               href="https://www.gambleaware.org/"
-              className="text-gray-400 hover:text-white transition"
+              className="text-gray-400 hover:text-blue-500 transition"
             >
               <Image
                 src="/gamblingaware.svg"
                 alt="gamblingaware-logo"
-                width={120}
-                height={50}
+                width={200}
+                height={200}
               />
-            </a>
-          </div>
-
-          <div className="mt-4 md:mt-0 text-gray-400 text-sm">
-            ©2024 - All rights reserved by{" "}
-            <Link
-              href="https://yourgamedestination.com/"
-              target="_blank"
-              className="underline hover:text-white"
-            >
-              zockerwelt-de.com
             </Link>
           </div>
         </div>

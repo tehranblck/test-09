@@ -16,10 +16,10 @@ const Banner = () => {
           {/* Text Section */}
           <div className="lg:pr-10 text-center lg:text-left animate__animated animate__fadeInLeft">
             <h1 className="text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-6 tracking-tight">
-              Elevate Your Casino Experience
+            Boost Your Casino Experience
             </h1>
             <p className="text-lg lg:text-xl text-white mb-8 leading-relaxed">
-              At zockerwelt-de.com, we bring you the best reviews of social casino games. Play poker, blackjack, and slots without any risks, and enjoy a secure gaming experience that is purely for fun.
+            We provide you with the best social casino game evaluations at zockerwelt-de.com. Enjoy a risk-free, safe, and entirely enjoyable gaming experience when playing slots, blackjack, and poker.
             </p>
 
             {/* Call to Action Button */}
