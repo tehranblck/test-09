@@ -1,6 +1,7 @@
 // pages/InfoComponent.tsx
 "use client";
 import Image from "next/image";
+import { useEffect, useState } from "react";
 
 interface InfoSection {
   title: string;
@@ -9,60 +10,116 @@ interface InfoSection {
 
 const infoSections: InfoSection[] = [
   {
-    title: "Was sind Social-Casino-Spiele?",
+    title: "What Are Social Casino Games?",
     content:
-      "Social-Casino-Spiele sind kostenlose Spiele, die Casino-ähnliche Spielerlebnisse simulieren. Im Gegensatz zu traditionellen Casinospielen verwenden sie virtuelle Währungen, sodass es keine tatsächlichen Auszahlungen oder finanziellen Risiken gibt.",
+      "Social casino games are free-to-play games that simulate casino-like experiences. Unlike traditional casino games, they use virtual currencies, so there are no real payouts or financial risks involved.",
   },
   {
-    title: "Vorteile unserer Spiele",
+    title: "Benefits of Our Games",
     content:
-      "Diese Spiele bieten Unterhaltung und soziale Interaktionen, ohne echtes Geld zu benötigen. Sie bieten den Spielern die Möglichkeit, beliebte Casino-ähnliche Spiele zu genießen, während sie mit Freunden in Kontakt treten, Erfolge teilen und auf Ranglisten konkurrieren.",
+      "These games provide entertainment and social interactions without the need for real money. Players can enjoy popular casino-like games while connecting with friends, sharing achievements, and competing on leaderboards.",
   },
   {
-    title: "Beliebte Spieltypen",
+    title: "Popular Game Types",
     content:
-      "Social-Casino-Spiele umfassen eine Vielzahl von Spieltypen wie Slots, Poker und Blackjack. Spieler können diese Spiele auf verschiedenen Geräten genießen und an täglichen Herausforderungen, Quests und Events teilnehmen, um Belohnungen im Spiel zu erhalten.",
+      "Social casino games include a variety of types such as slots, poker, and blackjack. Players can enjoy these games across various devices and participate in daily challenges, quests, and events to earn in-game rewards.",
   },
   {
-    title: "Zugänglichkeit und Verfügbarkeit",
+    title: "Accessibility and Availability",
     content:
-      "Social-Casino-Spiele sind auf Mobilgeräten, Tablets und Computern weit verbreitet. Viele Spiele können über Apps oder Webbrowser gespielt werden, was ein bequemes Spielen unterwegs ermöglicht. Diese Spiele sind in der Regel kostenlos herunterzuladen und zu spielen.",
+      "Social casino games are widely available on mobile devices, tablets, and computers. Many games can be played through apps or web browsers, offering convenient play on the go. These games are typically free to download and play.",
   },
-  
 ];
 
 const InfoComponent = () => {
+  const [isVisible, setIsVisible] = useState(false);
+
+  // To trigger animations on scroll
+  useEffect(() => {
+    const onScroll = () => {
+      const scrollY = window.scrollY;
+      if (scrollY > 200) {
+        setIsVisible(true);
+      }
+    };
+    window.addEventListener("scroll", onScroll);
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
   return (
-    <div className="my-20 px-6" id="info-section">
-      <h3 className="text-center text-3xl lg:text-5xl font-bold text-offwhite mb-6">
-        Erfahren Sie mehr über unsere Spiele
-      </h3>
-      <p className="text-center lg:text-lg font-normal text-bluish ">
-        Entdecken Sie verschiedene Aspekte von Social-Casino-Spielen, einschließlich ihrer Vorteile, Zugänglichkeit und Sicherheit.
-      </p>
+    <div className="relative my-20 px-6 max-w-7xl mx-auto" id="info-section">
+      {/* Decorative Wave Background */}
+      <div className="absolute inset-0 -z-10 bg-gradient-to-r from-blue-400 to-purple-600 opacity-30 transform skew-y-6"></div>
 
-      <div className="mx-auto max-w-7xl flex flex-col items-center">
-        {/* Image Section */}
-        {/* <div className="w-full flex justify-center my-8">
-          <Image
-            src="/images/Info/infographic.svg"
-            alt="info-image"
-            width={941}
-            height={379}
-          />
-        </div> */}
+      {/* Section Title */}
+      <div
+        className={`text-center mb-16 transition-opacity duration-700 ${
+          isVisible ? "opacity-100" : "opacity-0"
+        }`}
+      >
+        <h3 className="text-5xl font-extrabold text-white mb-6 tracking-wide animate-fadeInUp">
+          Discover Our Casino Games
+        </h3>
+        <p className="text-xl text-white max-w-3xl mx-auto">
+          Learn about the exciting world of social casino games, from popular types to accessibility features.
+        </p>
+      </div>
 
-        {/* Informational Sections */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 w-full px-4 pt-8">
-          {infoSections.map((section, index) => (
+      {/* Floating Info Sections with Slide-in Animation */}
+      <div className="relative space-y-16">
+        {infoSections.map((section, index) => (
+          <div
+            key={index}
+            className={`relative flex items-center ${
+              index % 2 === 0 ? "justify-start" : "justify-end"
+            } transition-all duration-700 ease-in-out ${
+              isVisible ? "opacity-100" : "opacity-0"
+            }`}
+          >
+            {/* Curved Decorative Shape */}
             <div
-              className="bg-[#2323239d] rounded-lg p-6 shadow-md text-offwhite"
-              key={index}
+              className={`absolute w-[300px] h-[300px] bg-gradient-to-tr from-indigo-500 to-purple-500 rounded-full ${
+                index % 2 === 0 ? "-left-32" : "-right-32"
+              } transform rotate-12 animate-pulse`}
+            ></div>
+
+            {/* Content Area with Backdrop Blur and Fade-in */}
+            <div
+              className={`relative p-10 text-white max-w-lg z-10 bg-black/30 rounded-lg backdrop-blur-sm transition-all duration-700 ease-in-out transform ${
+                isVisible
+                  ? index % 2 === 0
+                    ? "translate-x-0"
+                    : "translate-x-0"
+                  : index % 2 === 0
+                  ? "-translate-x-20"
+                  : "translate-x-20"
+              } hover:scale-105`}
             >
-              <h4 className="text-2xl font-semibold mb-4">{section.title}</h4>
-              <p className="text-md text-bluish font-normal opacity-90">{section.content}</p>
+              <h4 className="text-3xl font-bold mb-4">{section.title}</h4>
+              <p className="text-lg leading-relaxed">{section.content}</p>
             </div>
-          ))}
+          </div>
+        ))}
+      </div>
+
+      {/* Image Section - Full Width Background with Zoom-in on Scroll */}
+      <div className="relative mt-32">
+        <div className="relative w-full h-[500px] overflow-hidden rounded-xl transition-transform duration-2000 ease-in-out transform hover:scale-105">
+          <Image
+            src="/pandaslot.png"
+            alt="informative graphic"
+            layout="fill"
+            objectFit="cover"
+            className="opacity-90"
+          />
+          {/* Overlay Effect */}
+          <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+          <div className="absolute bottom-10 left-10 text-white">
+            <h3 className="text-4xl font-bold">Stay Informed with Our Games</h3>
+            <p className="text-lg mt-4 max-w-lg">
+              Get the latest updates and insights into the world of social casino gaming.
+            </p>
+          </div>
         </div>
       </div>
     </div>

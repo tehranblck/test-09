@@ -1,51 +1,58 @@
 "use client";
 import Image from "next/image";
-import React, { useState } from "react";
+import React from "react";
 import Button from "../Button/Button";
 
 const Banner = () => {
-  const [isOpen, setOpen] = useState(false);
-
   return (
-    <div className="bg-image pt-16 mb-16 sm:mt-0 relative" id="home-section">
-      <div className="arrowOne"></div>
-      <div className="radial-banner hidden lg:block"></div>
+    <div className="relative overflow-hidden bg-gradient-to-r from-purple-900 via-purple-800 to-purple-700 pt-24 pb-20 lg:pt-36 lg:pb-24 mb-16" id="home-section">
+      {/* Wavy shapes for creative background */}
+      <div className="absolute -top-10 right-0 w-[800px] h-[800px] bg-gradient-to-br from-purple-400 via-pink-500 to-purple-900 rounded-full mix-blend-overlay opacity-20 blur-2xl"></div>
+      <div className="absolute -bottom-20 left-0 w-[600px] h-[600px] bg-gradient-to-tr from-blue-500 via-purple-400 to-purple-700 rounded-full mix-blend-overlay opacity-20 blur-2xl"></div>
 
-      <div className="mx-auto max-w-7xl pt-16 lg:pt-40 sm:pb-24 px-6">
-        <div className="height-work">
-          <div className="flex justify-center items-center flex-col-reverse">
-            <div className="col-span-7">
-              <h1 className="text-3xl lg:text-6xl font-bold mb-5 !backdrop-brightness-50 text-white text-center">
-              Finde das beste Social-Casino-Spiel
-              </h1>
-              <p className="text-white md:text-sm space-x-1 font-normal mb-10 text-center">
-              Willkommen auf zockerwelt-de.com, dem besten Ort, um Rezensionen über Social-Casino-Spiele zu finden! Unsere Website widmet sich der Bereitstellung aufschlussreicher und fesselnder Bewertungen einer Vielzahl beliebter Casino-ähnlicher Spiele. Wir konzentrieren uns auf Spiele, die ausschließlich zur Unterhaltung dienen und es den Nutzern ermöglichen, Poker, Blackjack, Slots und andere Spiele zu spielen, ohne etwas zu riskieren. Entdecke das beste Social-Casino-Spiel, indem du unsere Rezensionen liest, und genieße ein risikofreies, angenehmes und sicheres Spielerlebnis.
-              </p>
+      <div className="relative mx-auto max-w-7xl px-6 z-10">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          
+          {/* Text Section */}
+          <div className="lg:pr-10 text-center lg:text-left animate__animated animate__fadeInLeft">
+            <h1 className="text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-6 tracking-tight">
+              Elevate Your Casino Experience
+            </h1>
+            <p className="text-lg lg:text-xl text-white mb-8 leading-relaxed">
+              At zockerwelt-de.com, we bring you the best reviews of social casino games. Play poker, blackjack, and slots without any risks, and enjoy a secure gaming experience that is purely for fun.
+            </p>
 
-              {/* Centered Button */}
-              <div className="flex justify-center">
-                <Button buttonText="Spielen" href="/game/index.html" />
-              </div>
-            </div>
-
-            <div className="col-span-5 lg:mb-10">
-              <div className="arrowThree"></div>
-              <div className="arrowFour"></div>
-              <div className="arrowFive"></div>
-              <a href="game/index.html">
-                <Image
-                  className="m-auto hidden md:block"
-                  src="/images/Logo/ban.png"
-                  alt="banner-image"
-                  width={400}
-                  height={460}
-                />
-              </a>
-              <div className="arrowSix"></div>
-              <div className="arrowSeven"></div>
-              <div className="arrowEight"></div>
+            {/* Call to Action Button */}
+            <div className="flex justify-start lg:justify-start">
+              <Button btncolor="#ff00e0" buttonText="Play Now" href="/game/index.html"/>
             </div>
           </div>
+
+          {/* Image Section with Brush Stroke and Creative Elements */}
+          <div className="relative flex justify-center lg:justify-end">
+            {/* Decorative brush stroke */}
+            <div className="absolute -top-16 -left-16 lg:-top-20 lg:-left-24 w-[400px] h-[400px] lg:w-[600px] lg:h-[600px] opacity-50 rotate-12">
+              {/* <Image
+                src="/stroke.png" // Fırça darbesi görseli (SVG format)
+                alt="Brush Stroke"
+                layout="fill"
+                objectFit="contain"
+              /> */}
+            </div>
+
+            {/* Main Image */}
+            <a href="/game/index.html" className="relative z-20 hover:scale-110 transition-transform duration-700">
+              <Image
+                className="rounded-full shadow-2xl border-8 border-gray-100 hover:border-primary-500 transition-all duration-500"
+                src="/pandaslot.png"
+                alt="Banner Image"
+                width={600}
+                height={600}
+              />
+              <div className="absolute inset-0 rounded-full bg-gradient-to-r from-purple-600 via-pink-500 to-yellow-400 opacity-0 hover:opacity-80 transition-opacity duration-700"></div>
+            </a>
+          </div>
+          
         </div>
       </div>
     </div>

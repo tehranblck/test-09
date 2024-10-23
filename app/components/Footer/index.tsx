@@ -1,131 +1,114 @@
 import Image from "next/image";
 import Link from "next/link";
+import { navigation } from "../nav/nav"; // Navigation verisini içe aktarıyoruz
 
-// MIDDLE LINKS DATA
-interface ProductType {
-  id: number;
-  section: string;
-  link: string[];
-}
-
-interface Social {
-  imgsrc: string;
-  href: string;
-}
-
-const products: ProductType[] = [
-  {
-    id: 1,
-    section: "Nützliche Links",
-    link: ["Startseite", "Spiele", "Funktionen", "FAQ"],
-  },
-];
-
-
-
-const footer = () => {
+const Footer = () => {
   return (
-    <footer style={{backdropFilter:"blur(15px)"}}  className=" w-full relative">
-      <div className="  hidden lg:block"></div>
-      <div className="mx-auto bg-[#000000cc]   pb-16 px-4 sm:px-6 py-10 ">
-        <div className="container mx-auto grid grid-cols-1 gap-y-10 gap-x-16 sm:grid-cols-2 lg:grid-cols-12 xl:gap-x-8">
-          {/* COLUMN-1 */}
-
-          <div className="col-span-6  lg:mr-14">
-            <Image
-            width={200}
-            height={200}
-              className="block h-12 w-20px mb-6"
-              src={"/images/Logo/logo.svg"}
-              alt="Crypto-Logo"
-            />
-            <h1 className="text-white font-bold mb-5">Haftungsausschluss</h1>
-            <h3 className="text-lightblue text-sm font-normal leading-6 mb-4 lg:mb-16">
-              {" "}
-              Auf zockerwelt-de.com konzentrieren wir uns darauf, einen sicheren und unterhaltsamen Raum für Spieler zu schaffen, um Social-Casino-Spiele ohne Geldeinsatz zu erkunden. Wir sind keine Partner oder Aggregatoren; stattdessen ist es unser Ziel, Benutzer über Social-Casino-Spiele aufzuklären und Informationen über beliebte Optionen bereitzustellen. Unsere Plattform ist darauf ausgerichtet, wertvolle Einblicke und Bewertungen anzubieten, ohne Zahlungen oder sensible Informationen anzufordern. Es ist wichtig zu beachten, dass das Gewinnen in Social-Casino-Spielen keine Gewinnaussichten in Echtgeld-Casinos garantiert. Viel Spaß beim Durchstöbern unserer Inhalte und beim Entdecken der besten Social-Casino-Spiele ohne Risiken!
-            </h3>
-            
+    <footer className="bg-gray-900 text-white py-12 relative">
+      {/* Container Wrapper */}
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {/* Column 1: Logo & Disclaimer */}
+          <div>
+            <Link href="/" className="flex mb-6">
+              <Image
+                width={150}
+                height={150}
+                src="/images/Logo/logo.svg"
+                alt="Crypto-Logo"
+              />
+            </Link>
+            <h1 className="text-lg font-bold mb-4">Disclaimer</h1>
+            <p className="text-sm text-gray-400 leading-relaxed">
+              At zockerwelt-de.com, we focus on creating a safe and fun space for players to explore social casino games without any monetary investment. Please note, winning in social casino games does not guarantee success in real-money casinos. Enjoy discovering the best social casino games without risks!
+            </p>
           </div>
 
-          {/* CLOUMN-2/3 */}
+          {/* Column 2: Useful Links */}
+          <div>
+            <h2 className="text-lg font-bold mb-4">Useful Links</h2>
+            <ul className="space-y-4">
+              {navigation.map((item) => (
+                <li key={item.name}>
+                  <Link
+                    href={item.href}
+                    className="text-sm text-gray-400 hover:text-white transition"
+                  >
+                    {item.name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
 
-          {products.map((product) => (
-            <div key={product.id} className="group relative col-span-2">
-              <p className="text-white text-xl font-medium mb-2">
-                {product.section}
-              </p>
-              <ul className="mt-2">
-                {product.link.map((link: string, index: number) => (
-                  <li key={index} className="mb-4">
-                    <Link
-                      href="/"
-                      className="text-offwhite  text-sm font-normal mb-6 space-links"
-                    >
-                      {link}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          ))}
-
-          <div className="col-span-4">
-            <h3 className="text-white text-xl font-medium mb-2">Kontakt</h3>
-            <h4 className="text-offwhite text-sm font-normal mb-6 flex gap-2 mt-16">
+          {/* Column 3: Contact & Social Media */}
+          <div>
+            <h2 className="text-lg font-bold mb-4">Contact</h2>
+            <div className="flex items-center mb-6">
               <Image
-                src={"/images/Footer/email.svg"}
+                src="/images/Footer/email.svg"
                 alt="email-icon"
-                width={20}
-                height={20}
+                width={24}
+                height={24}
+                className="mr-4"
               />
-              contact@zockerwelt-de.com
-            </h4>
+              <span className="text-sm">contact@zockerwelt-de.com</span>
+            </div>
           </div>
         </div>
-      </div>
-      <div className="flex gap-4 bg-[#000000cc]  flex-wrap justify-center items-center  py-2">
-        <a href="https://www.gamcare.org.uk/">
-          <Image
-            src={"/gamcare.svg"}
-            alt="email-icon"
-            width={220}
-            height={20}
-          />
-        </a>
-        <a href="/">
-          <Image
-            src={"/18+disclaimer.svg"}
-            alt="email-icon"
-            width={70}
-            height={100}
-          />
-        </a>
-        <a href="https://www.gambleaware.org/">
-          <Image
-            src={"/gamblingaware.svg"}
-            alt="email-icon"
-            width={220}
-            height={120}
-          />
-        </a>
-      </div>
-      {/* All Rights Reserved */}
 
-      <div className="py-8 px-4 border-t bg-[#000000cc]  border-t-lightblue">
-        <h3 className="text-center text-offwhite">
-          @2024 - Alle Rechte vorbehalten von{" "}
-          <Link
-            href="https://yourgamedestination.com/"
-            target="_blank"
-            className="text-wrap"
-          >
-            {" "}
-            zockerwelt-de.com
-          </Link>
-        </h3>
+        {/* Divider */}
+        <div className="border-t border-gray-700 mt-8"></div>
+
+        {/* Lower Footer */}
+        <div className="py-6 flex flex-col md:flex-row justify-between items-center text-center md:text-left">
+          <div className="flex space-x-6">
+            <a
+              href="https://www.gamcare.org.uk/"
+              className="text-gray-400 hover:text-white transition"
+            >
+              <Image
+                src="/gamcare.svg"
+                alt="gamcare-logo"
+                width={120}
+                height={40}
+              />
+            </a>
+            <a href="/" className="text-gray-400 hover:text-white transition">
+              <Image
+                src="/18+disclaimer.svg"
+                alt="18+-logo"
+                width={50}
+                height={50}
+              />
+            </a>
+            <a
+              href="https://www.gambleaware.org/"
+              className="text-gray-400 hover:text-white transition"
+            >
+              <Image
+                src="/gamblingaware.svg"
+                alt="gamblingaware-logo"
+                width={120}
+                height={50}
+              />
+            </a>
+          </div>
+
+          <div className="mt-4 md:mt-0 text-gray-400 text-sm">
+            ©2024 - All rights reserved by{" "}
+            <Link
+              href="https://yourgamedestination.com/"
+              target="_blank"
+              className="underline hover:text-white"
+            >
+              zockerwelt-de.com
+            </Link>
+          </div>
+        </div>
       </div>
     </footer>
   );
 };
 
-export default footer;
+export default Footer;

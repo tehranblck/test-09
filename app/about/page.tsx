@@ -1,74 +1,88 @@
-"use client"
+"use client";
 import React from 'react';
-import { useRouter } from 'next/navigation';
 
 const Page = () => {
-  const router = useRouter();
+ 
 
-  const navigateToMoreInfo = () => {
-    router.push('/more-info'); // Ersetze durch die tatsächliche Route zu einer detaillierten Informationsseite, falls vorhanden
-  };
 
   return (
-    <div className="flex container mx-auto flex-col items-center justify-center min-h-screen bg-gray-800 text-white  px-6">
-      <div style={{ zIndex: '-1' }} className="layer top-0"></div>
-      <div style={{ backdropFilter: 'blur(10px)' }}>
-      
-      <div className="bg-gray-700 pt-24 rounded-lg mt-16 shadow-lg p-8  w-full ">
-        {/* Page Header */}
-        <h1 className="text-4xl font-bold text-center text-blue-400 mb-4">
-          Kostenlose Social-Gaming-Erfahrung
+    <div className="flex container mx-auto flex-col mt-32 items-center justify-center min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white px-6 py-12">
+      {/* Hero Section */}
+      <div className="text-center space-y-6 max-w-4xl mx-auto mb-16">
+        <h1 className="text-5xl font-bold text-transparent text-white bg-gradient-to-r from-blue-500 to-purple-600 animate-pulse">
+          Experience the Future of Social Gaming
         </h1>
-
-        {/* Introduction Section */}
-        <section className="space-y-4">
-          <p className="text-gray-300 leading-relaxed">
-            Social Gaming bietet eine fantastische Möglichkeit, verschiedene Spiele zu genießen und sich in einer virtuellen Umgebung mit anderen zu verbinden. Im Gegensatz zu traditionellen Spielmodi sind Social Games ausschließlich zum Spaß gedacht und bieten den Spielern die Möglichkeit, verschiedene Spielstile zu erkunden, Fähigkeiten aufzubauen und einzigartige Erlebnisse mit Freunden zu teilen.
-          </p>
-        </section>
-
-        {/* Features Section */}
-        <section className="space-y-4">
-          <h2 className="text-2xl font-semibold text-blue-400">Hauptmerkmale von Social Games</h2>
-          <ul className="list-disc list-inside text-gray-300 space-y-2">
-            <li>Zugriff auf Spiele jederzeit und überall, nur mit einer Internetverbindung.</li>
-            <li>Genießen Sie entspanntes, freundliches Gameplay, das für alle Fähigkeitsstufen geeignet ist.</li>
-            <li>Treten Sie in Ranglisten an und stellen Sie sich Herausforderungen mit Freunden.</li>
-            <li>Erleben Sie kontinuierliche Updates mit neuen Levels, Themen und Events.</li>
-          </ul>
-        </section>
-
-        {/* Types of Social Games Section */}
-        <section className="space-y-4">
-          <h2 className="text-2xl font-semibold text-blue-400">Arten von Social Games</h2>
-          <p className="text-gray-300 leading-relaxed">
-            Social Games decken eine breite Palette von Genres ab, von Rätseln und Wortspielen bis hin zu Abenteuer- und Simulationsspielen. Diese Spiele können allein oder mit anderen gespielt werden und beinhalten oft Funktionen, die Zusammenarbeit und freundlichen Wettbewerb fördern. Hier sind einige beliebte Arten von Social Games:
-          </p>
-          <ul className="list-disc list-inside text-gray-300 space-y-2">
-            <li>
-              <strong>Rätselspiele:</strong> Lösen Sie herausfordernde Rätsel und Denksportaufgaben, die Sie mit Freunden teilen können.
-            </li>
-            <li>
-              <strong>Strategiespiele:</strong> Planen und bauen Sie virtuelle Welten, treffen Sie Entscheidungen und arbeiten Sie mit anderen zusammen.
-            </li>
-            <li>
-              <strong>Simulationsspiele:</strong> Verwalten Sie virtuelle Gemeinschaften oder Lebensstile und entdecken Sie eine Vielzahl kreativer Möglichkeiten.
-            </li>
-          </ul>
-        </section>
-
-        {/* Community and Social Interaction Section */}
-        <section className="space-y-4">
-          <h2 className="text-2xl font-semibold text-blue-400">Gemeinschaft und soziale Interaktion</h2>
-          <p className="text-gray-300 leading-relaxed">
-            Social Games sind darauf ausgelegt, Menschen zusammenzubringen. Sie beinhalten oft Chat-Funktionen, soziale Medienintegration und die Möglichkeit, Gruppen oder Teams zu bilden. Viele Spieler genießen es, Erfolge zu teilen, in Ranglisten zu konkurrieren und zusammenzuarbeiten, um Herausforderungen zu meistern. Diese Elemente schaffen ein Gemeinschaftsgefühl und machen Social Gaming zu einer mitreißenden Erfahrung.
-          </p>
-        </section>
-
-        {/* More Information Button */}
+        <p className="text-lg text-gray-400 leading-relaxed">
+          Dive into a world of interactive and immersive social gaming experiences, where the boundaries of fun and community are limitless. Explore different games, connect with friends, and create lasting memories.
+        </p>
        
       </div>
-    </div>
+
+      {/* Features Section */}
+      <section className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+        <div className="bg-gray-800 p-8 rounded-xl shadow-lg hover:shadow-2xl transition-transform transform hover:scale-110 border-t-4 border-blue-500">
+          <h2 className="text-2xl font-semibold text-blue-400 mb-4">Accessible Gaming</h2>
+          <p className="text-gray-400 leading-relaxed">
+            Play your favorite social games anytime, anywhere, with just an internet connection.
+          </p>
+        </div>
+
+        <div className="bg-gray-800 p-8 rounded-xl shadow-lg hover:shadow-2xl transition-transform transform hover:scale-110 border-t-4 border-blue-500">
+          <h2 className="text-2xl font-semibold text-blue-400 mb-4">Friendly Gameplay</h2>
+          <p className="text-gray-400 leading-relaxed">
+            Enjoy relaxed and friendly gameplay, suitable for players of all skill levels.
+          </p>
+        </div>
+
+        <div className="bg-gray-800 p-8 rounded-xl shadow-lg hover:shadow-2xl transition-transform transform hover:scale-110 border-t-4 border-blue-500">
+          <h2 className="text-2xl font-semibold text-blue-400 mb-4">Continuous Updates</h2>
+          <p className="text-gray-400 leading-relaxed">
+            Experience continuous updates with new levels, themes, and events to keep you engaged.
+          </p>
+        </div>
+      </section>
+
+      {/* Types of Social Games Section */}
+      <section className="max-w-4xl mx-auto space-y-8 mb-16">
+        <h2 className="text-3xl font-semibold text-blue-400 text-center mb-8">Types of Social Games</h2>
+        <div className="space-y-4">
+          <p className="text-gray-400 leading-relaxed">
+            Social games cover a wide range of genres, from puzzles and word games to adventure and simulation games. Play solo or with friends, and enjoy features that encourage collaboration and friendly competition.
+          </p>
+        </div>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-2xl transition-transform transform hover:scale-105 border-b-4 border-purple-500">
+            <h3 className="text-xl font-semibold text-purple-400">Puzzle Games</h3>
+            <p className="text-gray-400 leading-relaxed">
+              Solve challenging puzzles and brain teasers that you can share with friends.
+            </p>
+          </div>
+          <div className="bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-2xl transition-transform transform hover:scale-105 border-b-4 border-purple-500">
+            <h3 className="text-xl font-semibold text-purple-400">Strategy Games</h3>
+            <p className="text-gray-400 leading-relaxed">
+              Plan and build virtual worlds, make decisions, and collaborate with others.
+            </p>
+          </div>
+          <div className="bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-2xl transition-transform transform hover:scale-105 border-b-4 border-purple-500">
+            <h3 className="text-xl font-semibold text-purple-400">Simulation Games</h3>
+            <p className="text-gray-400 leading-relaxed">
+              Manage virtual communities or lifestyles and explore a variety of creative possibilities.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Community Section */}
+      <section className="bg-gradient-to-r from-gray-800 to-gray-700 p-12 rounded-lg shadow-xl text-center space-y-6 max-w-5xl mx-auto hover:bg-gradient-to-l hover:from-gray-700 hover:to-gray-800 transition-colors duration-500">
+        <h2 className="text-3xl font-semibold text-blue-400">Community and Social Interaction</h2>
+        <p className="text-gray-400 leading-relaxed">
+          Social games are designed to bring people together. Enjoy sharing achievements, competing on leaderboards, and collaborating to overcome challenges. These features foster a strong sense of community and make social gaming a truly engaging experience.
+        </p>
+      </section>
+
+      {/* Call to Action */}
+   
+    
     </div>
   );
 };
