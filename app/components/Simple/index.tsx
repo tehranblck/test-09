@@ -11,7 +11,7 @@ const Simple = () => {
         Discover Games With Us!
         </h3>
         <p className="text-center text-bluish text-lg font-normal mb-8">
-        With our in-depth analyses of the top social casino games, you may lose yourself in an exciting and never-ending fun world. Everyone can find something to like, regardless of experience level. You can enjoy hours of entertainment with our platform's free access to the newest releases, timeless classics, and undiscovered gems. Discover your next favorite game by reading our reviews!        </p>
+        With our in-depth analyses of the top social casino games, you may lose yourself in an exciting and never-ending fun world. Everyone can find something to like, regardless of experience level. You can enjoy hours of entertainment with our platform&apos;s free access to the newest releases, timeless classics, and undiscovered gems. Discover your next favorite game by reading our reviews!        </p>
       </div>
       <div className="simplesix"></div>
       <div className="simpleseven"></div>
