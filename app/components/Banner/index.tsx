@@ -19,11 +19,11 @@ const Banner = () => {
             Boost Your Casino Experience
             </h1>
             <p className="text-lg lg:text-xl text-white mb-8 leading-relaxed">
-            We provide you with the best social casino game evaluations at zockerwelt-de.com. Enjoy a risk-free, safe, and entirely enjoyable gaming experience when playing slots, blackjack, and poker.
+            At panslotfi.com, we bring you top-notch evaluations of social slot games. Enjoy a completely safe, risk-free, and entertaining gaming experience with our slot game selections.
             </p>
 
             {/* Call to Action Button */}
-            <div className="flex justify-start lg:justify-start">
+            <div className="flex justify-center lg:justify-start">
               <Button btncolor="#ff00e0" buttonText="Play Now" href="/game/index.html"/>
             </div>
           </div>

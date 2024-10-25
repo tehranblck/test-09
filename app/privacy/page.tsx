@@ -70,7 +70,7 @@ const Page: React.FC = () => {
             If you have any questions or concerns about our Privacy Policy or Terms of Use, please contact us at:
           </p>
           <ul className="list-inside">
-            <li>Email: contact@zockerwelt-de.com</li>
+            <li>Email: contact@slotpanfi.com</li>
           </ul>
         </section>
       </div>

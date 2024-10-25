@@ -8,6 +8,7 @@ interface ButtonProps {
   onClick?: () => void;
   btncolor?: string;
   btnTxtColor?: string;
+  className?:string;
 }
 
 const StyledWrapper = styled.div<{ btncolor?: string; btnTxtColor?: string }>`
@@ -42,9 +43,9 @@ const StyledWrapper = styled.div<{ btncolor?: string; btnTxtColor?: string }>`
   }
 `;
 
-const Button: React.FC<ButtonProps> = ({ buttonText, href, onClick, btncolor, btnTxtColor }) => {
+const Button: React.FC<ButtonProps> = ({ buttonText, href, onClick, btncolor, btnTxtColor,className }) => {
   return (
-    <StyledWrapper btncolor={btncolor} btnTxtColor={btnTxtColor}>
+    <StyledWrapper className={className} btncolor={btncolor} btnTxtColor={btnTxtColor}>
       <Link href={href || "#"} className="button" onClick={onClick}>
         {buttonText}
       </Link>

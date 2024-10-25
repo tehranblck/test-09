@@ -11,7 +11,7 @@ const Footer = () => {
         {/* Column 1: Useful Links */}
         <div className="flex-1">
           <h2 className="text-lg font-bold mb-4">Explore</h2>
-          <ul className=" flex  gap-2 justify-start items-center">
+          <ul className=" flex flex-wrap  gap-2 justify-start items-center">
             {navigation.map((item) => (
               <li key={item.name}>
                 <Link
@@ -36,7 +36,7 @@ const Footer = () => {
                 width={24}
                 height={24}
               />
-              <span className="text-sm">contact@zockerwelt-de.com</span>
+              <span className="text-sm">contact@slotpanfi.com</span>
             </div>
           </div>
         </div>
@@ -47,7 +47,7 @@ const Footer = () => {
             <Image
               width={120}
               height={120}
-              src="/images/Logo/logo.svg"
+              src="/logo.svg"
               alt="Crypto-Logo"
             />
           </Link>
@@ -58,14 +58,8 @@ const Footer = () => {
       <div className="mt-12 border-t border-gray-700 pt-8">
         <div className="container mx-auto flex flex-col md:flex-row justify-between items-center text-center md:text-left px-4 sm:px-6 lg:px-8">
           <p className="text-sm text-gray-400">
-            ©2024 - All rights reserved by{" "}
-            <Link
-              href="https://yourgamedestination.com/"
-              target="_blank"
-              className="underline hover:text-blue-500"
-            >
-              zockerwelt-de.com
-            </Link>
+            ©2024 - All rights reserved by {"slotpanfi.com"}
+           
           </p>
 
           <div className="mt-4 md:mt-0 flex items-center justify-center space-x-6">

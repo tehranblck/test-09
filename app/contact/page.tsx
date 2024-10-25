@@ -144,7 +144,7 @@ const ContactUs: React.FC = () => {
         <div className="mt-16 text-center space-y-4">
           <p className="text-lg font-semibold text-gray-300">Email:</p>
           <a href="mailto:contact@yourdomain.com" className="text-blue-400 hover:underline">
-            contact@yourdomain.com
+            contact@slotpanfi.com
           </a>
         </div>
       </div>

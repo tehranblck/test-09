@@ -2,12 +2,13 @@ import "./globals.css";
 import "@/node_modules/react-modal-video/scss/modal-video.scss";
 import Navbar from "./components/Navbar/index";
 import Footer from "./components/Footer/index";
+import CookieConsent from "./components/cookie/Cookies";
 
 export const metadata = {
-  title: "Soziales Casino",
-  description: "Soziales Casino Deutschland",
+  title: "Panda game casino",
+  description: "Social Casino England",
   icons: {
-    icon: "/favicon.svg",
+    icon: "/fav.svg",
   },
 };
 
@@ -20,10 +21,12 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <Navbar />
+        <CookieConsent/>
        <main style={{minHeight:'100vh'}}>
        {children}
        </main>
         <Footer />
+
       </body>
     </html>
   );
