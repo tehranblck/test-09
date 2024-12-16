@@ -70,13 +70,13 @@ const Navbar = () => {
             <Button
               buttonText="Sign In"
               btncolor="#6C63FF"
-              btnTxtColor="black"
+              btnTxtColor="text-white"
               onClick={() => handleOpenForm("signIn")}
             />
             <Button
               buttonText="Sign Up"
               btncolor="#FF6347"
-              btnTxtColor="black"
+              btnTxtColor="text-white"
               onClick={() => handleOpenForm("signUp")}
             />
           </div>

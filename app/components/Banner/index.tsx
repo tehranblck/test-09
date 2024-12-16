@@ -24,7 +24,7 @@ const Banner = () => {
 
             {/* Call to Action Button */}
             <div className="flex justify-center lg:justify-start">
-              <Button btncolor="#ff00e0" buttonText="About us" href="/about" />
+              <Button btncolor="text-white" buttonText="About us" href="/about" />
             </div>
           </div>
 
