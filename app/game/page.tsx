@@ -33,7 +33,7 @@ const MysteryMice = () => {
       <section className="bg-gray-900 py-16">
         <div className="max-w-4xl mx-auto text-center space-y-8">
           <h2 className="text-4xl font-bold text-teal-400">
-            What's Mystery Mice?
+            What&apos;s Mystery Mice?
           </h2>
           <p className="text-gray-300 leading-relaxed">
             Join a detective mouse on a 6×6 tumbling reel grid as it hunts for

@@ -82,7 +82,7 @@ const ContactUs: React.FC = () => {
             Contact Us
           </h1>
           <p className="text-lg text-gray-300">
-            Have a question or feedback? We'd love to hear from you! Drop us a
+            Have a question or feedback? We&apos;d love to hear from you! Drop us a
             message, and we&apos;ll get back to you shortly.
           </p>
         </div>
