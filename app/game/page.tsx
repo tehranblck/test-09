@@ -1,99 +1,139 @@
 "use client";
-import React from 'react';
-import Image from 'next/image';
-import Button from '../components/Button/Button';
+import React, { useState } from "react";
+import Image from "next/image";
 
-const SlotPan = () => {
+const MysteryMice = () => {
+  const [showIframe, setShowIframe] = useState(false);
+
+  const handlePlayNowClick = () => {
+    setShowIframe(true);
+  };
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-900 mt-32 to-gray-800 text-white">
+    <div className="min-h-screen bg-gradient-to-b from-gray-800 to-gray-900 text-white py-16">
       {/* Hero Section */}
-     
-    
-
-      {/* About Slot Pan Section */}
-      <section className="py-16 bg-gray-800 text-center">
-        <div className="max-w-4xl mx-auto space-y-8">
-          <h2 className="text-4xl font-bold text-blue-400">What is Slot Pan?</h2>
+      <section className="bg-gradient-to-r from-purple-900 to-purple-800 py-20 text-center">
+        <div className="max-w-5xl mx-auto space-y-6">
+          <h1 className="text-5xl font-bold text-yellow-400 drop-shadow-lg">
+            Welcome to Mystery Mice
+          </h1>
           <p className="text-lg text-gray-300 leading-relaxed">
-            Slot Pan is a simple yet thrilling game that combines elements of traditional slot machines with the excitement of quick decision-making. In this game, players spin the reels and aim to align matching symbols across paylines to win rewards.
+            Sniff out clues and uncover surprises in this thrilling adventure!
+            Join the detective mouse on a journey full of fun, strategy, and
+            unexpected discoveries.
+          </p>
+
+          <p className="text-sm text-gray-400 mt-4">
+            100% Free to Play! No Deposit Required.
           </p>
         </div>
       </section>
 
-      {/* How to Play Section */}
-      <section className="py-16 bg-gradient-to-r from-gray-900 to-gray-800">
-        <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 text-center md:text-left">
-          <div className="space-y-4">
-            <h2 className="text-3xl font-bold text-purple-400">How to Play</h2>
-            <ul className="list-decimal list-inside text-gray-300 space-y-4">
-              <li><strong>Place Your Bet:</strong> Select your bet size to determine your potential winnings.</li>
-              <li><strong>Spin the Reels:</strong> Hit the spin button and watch the reels rotate.</li>
-              <li><strong>Match Symbols:</strong> Align specific symbols across active paylines to win.</li>
-              <li><strong>Win Prizes:</strong> If the symbols align, you win a prize based on the paytable.</li>
-            </ul>
-          </div>
-          <div className="flex justify-center">
+      {/* About Section */}
+      <section className="bg-gray-900 py-16">
+        <div className="max-w-4xl mx-auto text-center space-y-8">
+          <h2 className="text-4xl font-bold text-teal-400">
+            What's Mystery Mice?
+          </h2>
+          <p className="text-gray-300 leading-relaxed">
+            Join a detective mouse on a 6×6 tumbling reel grid as it hunts for
+            surprises and builds clusters of excitement. Look out for symbols
+            like the suspect, policeman, cap, and pipe, and don’t miss the
+            Power Wilds—they can help you form bigger clusters and stay sticky
+            for longer tumbles!
+          </p>
+          <div className="mt-6">
             <Image
-              src="/pandaslot.png"
-              alt="How to Play Slot Pan"
-              width={400}
-              height={400}
-              className="rounded-xl shadow-lg"
+              src="/mystery-mice-grid.png"
+              alt="Mystery Mice Gameplay"
+              width={900}
+              height={900}
+              quality={100}
+              className="rounded-lg shadow-lg w-full"
             />
           </div>
         </div>
       </section>
 
-      {/* Types of Slot Pan Games Section */}
-      <section className="py-16 bg-gray-800">
-        <div className="max-w-5xl mx-auto text-center">
-          <h2 className="text-4xl font-bold text-blue-400">Types of Slot Pan Games</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 mt-8">
-            <div className="bg-gray-700 p-6 rounded-lg shadow-lg">
-              <h3 className="text-xl font-semibold text-purple-400">Classic Slot Pan</h3>
-              <p className="text-gray-300 mt-4">
-                Stick to the basics with three reels and simple paylines.
-              </p>
-            </div>
-            <div className="bg-gray-700 p-6 rounded-lg shadow-lg">
-              <h3 className="text-xl font-semibold text-purple-400">Multi-Line Slot Pan</h3>
-              <p className="text-gray-300 mt-4">
-                Offers multiple paylines, increasing your chances of winning with each spin.
-              </p>
-            </div>
-            <div className="bg-gray-700 p-6 rounded-lg shadow-lg">
-              <h3 className="text-xl font-semibold text-purple-400">Bonus Slot Pan</h3>
-              <p className="text-gray-300 mt-4">
-                Includes special features like free spins, bonus rounds, and multipliers for bigger rewards.
-              </p>
-            </div>
+      {/* Gameplay Features Section */}
+      <section className="bg-gradient-to-b from-purple-900 to-gray-800 py-16">
+        <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          <div className="space-y-6">
+            <h2 className="text-3xl font-bold text-yellow-400">
+              Game Features
+            </h2>
+            <ul className="text-gray-300 space-y-4">
+              <li>
+                <strong>Power Wilds:</strong> Special sticky symbols with levels
+                (1 to 10) that help form clusters.
+              </li>
+              <li>
+                <strong>Spyglass Scatter Symbols:</strong> Landing three or more
+                awards between 10 and 18 free spins.
+              </li>
+              <li>
+                <strong>Level Ups:</strong> Power Wilds can gain extra lifespan
+                during tumbles.
+              </li>
+              <li>
+                <strong>Bonus Feature:</strong> Two or more scatters during free
+                spins add extra spins to your count!
+              </li>
+            </ul>
+          </div>
+          <div>
+            <Image
+              src="/mystery-mice-hero.png"
+              alt="Mystery Mice Features"
+              quality={86}
+              width={400}
+              height={400}
+              className="rounded-xl "
+            />
           </div>
         </div>
       </section>
 
-      {/* Why Play Slot Pan Section */}
-      <section className="py-16 bg-gradient-to-b from-gray-900 to-gray-800 text-center">
-        <div className="max-w-4xl mx-auto space-y-8">
-          <h2 className="text-4xl font-bold text-blue-400">Why Play Slot Pan?</h2>
+      {/* Disclaimer Section */}
+      <section className="bg-gray-900 py-16 text-center">
+        <div className="max-w-6xl mx-auto space-y-8">
+          <h2 className="text-4xl font-bold text-teal-400">Play for Free</h2>
           <p className="text-lg text-gray-300 leading-relaxed">
-            Slot Pan is perfect for players who enjoy fast-paced action with straightforward rules. The game offers a mix of excitement and simplicity, making it a great choice whether you’re looking for a quick game or aiming to hit big payouts with strategic spins.
+            Mystery Mice is 100% free to play. No deposit, no risks, just pure
+            fun and excitement. Dive into the adventure today!
+          </p>
+          <p className="text-sm text-gray-400">
+            Disclaimer: Mystery Mice is a free-to-play game for entertainment
+            purposes only. No real money is involved.
           </p>
         </div>
-      </section>
-
-      {/* Play Now Section */}
-      <section className="py-16 bg-gray-900 text-center">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-4xl font-bold text-purple-400">Ready to Spin?</h2>
-          <p className="text-lg text-gray-300 mt-4">Start playing Slot Pan now and enjoy the thrill of spinning the reels!</p>
-          <div className="mt-8">
-          <Button btncolor="#ff00e0" btnTxtColor='black' buttonText="Play Now" href="/game/index.html"/>
-          </div>
+        <div className="mt-8">
+          <button
+            onClick={handlePlayNowClick}
+            className="bg-yellow-500 text-white px-6 py-4 rounded-full font-bold shadow-lg hover:bg-yellow-600 hover:scale-105 transition transform duration-300 ease-in-out animate-bounce"
+          >
+            🐭 Play Mystery Mice Now! 🎉
+          </button>
         </div>
       </section>
+
+      {/* Iframe Section */}
+      {showIframe && (
+        <section className="bg-gray-900 py-16 text-center">
+          <div className="max-w-6xl mx-auto">
+            <iframe
+              src="https://demogamesfree.pragmaticplay.net/gs2c/openGame.do?gameSymbol=vs20powerwild&websiteUrl=https%3A%2F%2Fdemogamesfree.pragmaticplay.net&jurisdiction=99&lobby_url=https%3A%2F%2Fwww.pragmaticplay.com%2Fen%2F"
+              width="100%"
+              height="600px"
+              frameBorder="0"
+              allowFullScreen
+              className="rounded-lg shadow-lg"
+            ></iframe>
+          </div>
+        </section>
+      )}
     </div>
   );
 };
 
-export default SlotPan;
+export default MysteryMice;

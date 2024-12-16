@@ -28,6 +28,6 @@ export default function Home(props: Props) {
         {/* <Trade /> */}
         <InfoComponent />
       </div>
-    </main>
+    </main >
   );
 }

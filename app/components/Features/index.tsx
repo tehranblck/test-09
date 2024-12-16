@@ -39,7 +39,7 @@ const features: Feature[] = [
 
 const Features = () => {
   return (
-    <div className="relative mx-auto max-w-6xl px-6 py-20" id="features-section">
+    <div className="relative  mx-auto max-w-6xl px-6 py-20" id="features-section">
       {/* Background Shape - Changed style */}
       <div className="absolute inset-0 bg-gradient-to-br from-blue-700 via-blue-500 to-blue-300 opacity-40 w-full h-full blur-[150px] rounded-full"></div>
 
@@ -89,7 +89,7 @@ const Features = () => {
       </div>
 
       {/* New Feature Card - Redesigned with New Layout */}
-    
+
     </div>
   );
 };

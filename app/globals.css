@@ -18,6 +18,10 @@ background: linear-gradient(190deg, #2845ac 15%,#2007ff 30%, #ed74c1 60%);
 
   overflow-x: hidden;
 }
+.description{
+  background: rgb(0,0,0);
+background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+}
 input{
   padding: 10px 12px;
   outline: none;

@@ -3,8 +3,7 @@ import React from 'react';
 
 const Page: React.FC = () => {
   return (
-    <div className="min-h-screen text-white">
-      <div className="layer -z-10"></div>
+    <div className="text-white">
       <div className="container mx-auto mt-32 backdrop-blur-xl bg-transparent p-6 rounded-lg shadow-md">
         <h1 className="text-3xl font-bold text-center text-blue-500 mb-8">Privacy Policy & Terms of Use</h1>
 
@@ -12,26 +11,26 @@ const Page: React.FC = () => {
         <section className="mb-12">
           <h2 className="text-2xl font-semibold mb-4">Privacy Policy</h2>
           <p className="mb-4">
-            Your privacy is important to us. This Privacy Policy explains how we protect your information when you visit our website. By accessing our website, you agree to this Privacy Policy. If you do not agree, please do not use our website.
+            Your privacy is important to us at Mystery Mice. This Privacy Policy outlines how we handle and protect your information when you use our services. By accessing Mystery Mice, you agree to this Privacy Policy. If you disagree, please refrain from using the platform.
           </p>
 
           <h3 className="text-xl font-semibold mt-6 mb-2">How We Use Your Information</h3>
           <p className="mb-4">
-            We use your information for various purposes, including:
+            We collect and use your information for the following purposes:
           </p>
           <ul className="list-disc list-inside mb-4">
-            <li>To operate and maintain our website.</li>
-            <li>To communicate with you and respond to inquiries.</li>
-            <li>To improve our services.</li>
+            <li>To provide, maintain, and improve the Mystery Mice platform.</li>
+            <li>To communicate with you and respond to your questions or feedback.</li>
+            <li>To analyze trends and enhance user experience.</li>
           </ul>
 
           <h3 className="text-xl font-semibold mt-6 mb-2">How We Share Your Information</h3>
           <p className="mb-4">
-            We do not sell your personal information. However, we may share it with the following parties:
+            Mystery Mice does not sell your personal information. However, we may share it in the following cases:
           </p>
           <ul className="list-disc list-inside mb-4">
-            <li>Service providers for email, hosting, or analytics services.</li>
-            <li>Public authorities, when required by law.</li>
+            <li>With trusted service providers to manage hosting, analytics, or communication tools.</li>
+            <li>When required by law to comply with legal obligations.</li>
           </ul>
         </section>
 
@@ -39,27 +38,27 @@ const Page: React.FC = () => {
         <section className="mb-12">
           <h2 className="text-2xl font-semibold mb-4">Terms of Use</h2>
           <p className="mb-4">
-            By accessing and using our website, you agree to these Terms of Use. If you do not agree, you are not permitted to use our website.
+            By accessing Mystery Mice, you agree to adhere to these Terms of Use. If you do not agree to these terms, you may not use the platform.
           </p>
 
           <h3 className="text-xl font-semibold mt-6 mb-2">Copyrights</h3>
           <p className="mb-4">
-            All content, features, and functionality on this website are our property or that of our licensors and are protected by copyright laws.
+            All content, features, and visuals within Mystery Mice are the property of the developers or their licensors. Unauthorized use of this material is strictly prohibited.
           </p>
 
           <h3 className="text-xl font-semibold mt-6 mb-2">User Conduct</h3>
           <p className="mb-4">
-            You agree to use our website only for lawful purposes. Prohibited activities include unauthorized access, transmitting harmful content, and disrupting the functionality of the website.
+            You agree to use Mystery Mice solely for lawful purposes. Activities such as attempting unauthorized access, disrupting functionality, or sharing malicious content are strictly forbidden.
           </p>
 
           <h3 className="text-xl font-semibold mt-6 mb-2">Disclaimer</h3>
           <p className="mb-4">
-            Our website is provided &apos;as is&apos; and &apos;as available&apos; without any warranties. We do not guarantee that the website will be error-free or secure.
+            Mystery Mice is provided &apos;as is&apos; and &apos;as available&apos;. We do not guarantee that the platform will be free of errors or interruptions, nor do we provide warranties of any kind.
           </p>
 
           <h3 className="text-xl font-semibold mt-6 mb-2">Limitation of Liability</h3>
           <p className="mb-4">
-            We are not liable for damages resulting from the use of our website, including indirect or consequential damages.
+            We are not responsible for any damages, direct or indirect, resulting from the use of Mystery Mice, including loss of data or interruptions in service.
           </p>
         </section>
 
@@ -67,10 +66,10 @@ const Page: React.FC = () => {
         <section className="mb-12">
           <h2 className="text-2xl font-semibold mb-4">Contact Us</h2>
           <p className="mb-4">
-            If you have any questions or concerns about our Privacy Policy or Terms of Use, please contact us at:
+            If you have any questions about our Privacy Policy or Terms of Use, please feel free to contact us:
           </p>
           <ul className="list-inside">
-            <li>Email: contact@slotpanfi.com</li>
+            <li>Email: support@mysterymice.com</li>
           </ul>
         </section>
       </div>

@@ -19,7 +19,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
+      <body className="description" >
         <Navbar />
         <CookieConsent />
         <main style={{ minHeight: '100vh' }}>
