@@ -5,7 +5,7 @@ import Footer from "./components/Footer/index";
 import CookieConsent from "./components/cookie/Cookies";
 
 export const metadata = {
-  title: "Panda game casino",
+  title: "Mystery Mice casino",
   description: "Social Casino England",
   icons: {
     icon: "/fav.svg",
@@ -21,10 +21,10 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <Navbar />
-        <CookieConsent/>
-       <main style={{minHeight:'100vh'}}>
-       {children}
-       </main>
+        <CookieConsent />
+        <main style={{ minHeight: '100vh' }}>
+          {children}
+        </main>
         <Footer />
 
       </body>

@@ -8,7 +8,6 @@ const CookieConsent: React.FC = () => {
   const [isAnimatingOut, setIsAnimatingOut] = useState(false);
 
   useEffect(() => {
-    // Check for "cookiesAccepted" in localStorage
     const cookiesAccepted = localStorage.getItem('cookiesAccepted');
     if (!cookiesAccepted) {
       setIsVisible(true);
@@ -16,12 +15,11 @@ const CookieConsent: React.FC = () => {
   }, []);
 
   const handleAccept = () => {
-    // Trigger exit animation
     setIsAnimatingOut(true);
     setTimeout(() => {
       localStorage.setItem('cookiesAccepted', 'true');
       setIsVisible(false);
-    }, 500); // Duration should match animation time
+    }, 500);
   };
 
   if (!isVisible) return null;
@@ -29,27 +27,37 @@ const CookieConsent: React.FC = () => {
   return (
     <>
       {/* Background blur effect */}
-      <div className="fixed inset-0 bg-black bg-opacity-50 backdrop-blur-sm z-40" />
+      <div
+        className="fixed inset-0 bg-black bg-opacity-40 backdrop-blur-sm z-40"
+        aria-hidden="true"
+      />
 
       {/* Cookie consent box */}
       <div
         className={clsx(
-          'fixed top-1/2 bg-white left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-11/12 md:w-1/2 lg:w-1/3 bg-gray-800 text-white p-6 rounded-lg shadow-lg z-50 transition-all duration-500 ease-out',
-          isAnimatingOut ? 'opacity-0 scale-90' : 'opacity-100 scale-100'
+          'fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-11/12 max-w-lg bg-white text-gray-800 p-6 rounded-xl shadow-2xl z-50 transition-all duration-500 ease-out',
+          isAnimatingOut ? 'opacity-0 scale-95' : 'opacity-100 scale-100'
         )}
       >
-        <p className="text-sm text-black md:text-base mb-4 text-center">
-          We use cookies to enhance your user experience. By using our site, you accept the use of cookies.
-          <Link className="text-blue-300 underline hover:text-blue-500 ml-1" href="/privacy">
-              Read our Privacy Policy
+        <h2 className="text-lg font-semibold text-center mb-4">
+          🍪 We Value Your Privacy
+        </h2>
+        <p className="text-sm md:text-base text-gray-600 mb-6 text-center leading-relaxed">
+          This website uses cookies to ensure you get the best experience. By continuing to browse, you agree to the use of cookies.
+          Learn more by reading our{' '}
+          <Link
+            href="/privacy"
+            className="text-blue-500 underline hover:text-blue-700 transition-colors duration-300"
+          >
+            Privacy Policy
           </Link>.
         </p>
-        <div className="text-center">
+        <div className="flex justify-center">
           <button
             onClick={handleAccept}
-            className="bg-black hover:bg-blue-600 text-white font-bold py-2 px-6 rounded-md transition-colors duration-300"
+            className="bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:ring-blue-400 text-white font-medium py-2 px-6 rounded-lg shadow-md transition-all duration-300"
           >
-            Accept
+            Got it!
           </button>
         </div>
       </div>
