@@ -14,19 +14,19 @@ export default function Home(props: Props) {
 
   return (
     <main  >
-      <div className="layer"/>
+      <div className="layer" />
       <div className="div"></div>
-      <div  style={{backdropFilter:'blur(10px)',width:'100%',height:'auto'}}>
-      <Banner />
+      <div style={{ backdropFilter: 'blur(10px)', width: '100%', height: 'auto' }}>
+        <Banner />
 
-{/* <Companies /> */}
-{/* <Work /> */}
-{/* <Simple /> */}
-{/* <Table /> */}
-<Features />
+        {/* <Companies /> */}
+        {/* <Work /> */}
+        {/* <Simple /> */}
+        {/* <Table /> */}
+        <Features />
 
-{/* <Trade /> */}
-<InfoComponent />
+        {/* <Trade /> */}
+        <InfoComponent />
       </div>
     </main>
   );

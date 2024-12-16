@@ -1,9 +1,12 @@
 import { Disclosure } from "@headlessui/react";
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import Button from "../Button/Button";
 import Image from "next/image";
+import Modal from "../Button/Modal";
+import SignInForm from "../Button/Signin";
+import SignUpForm from "../Button/SignUp";
 import { navigation } from "../nav/nav";
 
 function classNames(...classes: string[]) {
@@ -11,7 +14,19 @@ function classNames(...classes: string[]) {
 }
 
 const Navbar = () => {
-  const [isOpen, setIsOpen] = React.useState(false);
+  const [isOpen, setIsOpen] = useState(false); // Mobile menu toggle state
+  const [isModalOpen, setIsModalOpen] = useState(false); // Modal open/close state
+  const [formType, setFormType] = useState<"signIn" | "signUp" | null>(null); // Form type state
+
+  const handleOpenForm = (type: "signIn" | "signUp") => {
+    setFormType(type);
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+    setFormType(null);
+  };
 
   return (
     <Disclosure as="nav" className="navbar bg-transparent w-full fixed top-0 z-50">
@@ -35,7 +50,9 @@ const Navbar = () => {
                 key={item.name}
                 href={item.href}
                 className={classNames(
-                  item.current ? "bg-gray-900" : "navlinks text-white group transition duration-300 ease-in-out",
+                  item.current
+                    ? "bg-gray-900"
+                    : "navlinks text-white group transition duration-300 ease-in-out",
                   "px-3 py-2 rounded-md text-base font-medium relative"
                 )}
                 aria-current={item.current ? "page" : undefined}
@@ -48,9 +65,20 @@ const Navbar = () => {
             ))}
           </div>
 
-          {/* Play Button for Large Screens */}
-          <div className="hidden lg:flex">
-            <Button buttonText="Play" btncolor="#0023ff" href="/game/index.html" />
+          {/* Buttons for Large Screens */}
+          <div className="hidden lg:flex gap-3">
+            <Button
+              buttonText="Sign In"
+              btncolor="#6C63FF"
+              btnTxtColor="black"
+              onClick={() => handleOpenForm("signIn")}
+            />
+            <Button
+              buttonText="Sign Up"
+              btncolor="#FF6347"
+              btnTxtColor="black"
+              onClick={() => handleOpenForm("signUp")}
+            />
           </div>
 
           {/* Mobile menu button */}
@@ -87,12 +115,29 @@ const Navbar = () => {
             </Link>
           ))}
 
-          {/* Play Button in Mobile Menu */}
-          <div className=" flex justify-start">
-            <Button className="mt-4 mb-4" buttonText="Play"  btncolor="#0023ff" href="/game/index.html" />
+          {/* Buttons for Mobile Menu */}
+          <div className="flex flex-col items-start py-5 space-y-3 mt-3">
+            <Button
+              buttonText="Sign In"
+              btncolor="#6C63FF"
+              btnTxtColor="black"
+              onClick={() => handleOpenForm("signIn")}
+            />
+            <Button
+              buttonText="Sign Up"
+              btncolor="#FF6347"
+              btnTxtColor="black"
+              onClick={() => handleOpenForm("signUp")}
+            />
           </div>
         </div>
       </Disclosure.Panel>
+
+      {/* Modal */}
+      <Modal isOpen={isModalOpen} onClose={closeModal}>
+        {formType === "signIn" && <SignInForm />}
+        {formType === "signUp" && <SignUpForm />}
+      </Modal>
     </Disclosure>
   );
 };

@@ -10,21 +10,21 @@ const Banner = () => {
       <div className="absolute -top-10 right-0 w-[800px] h-[800px] bg-gradient-to-br from-purple-400 via-pink-500 to-purple-900 rounded-full mix-blend-overlay opacity-20 blur-2xl"></div>
       <div className="absolute -bottom-20 left-0 w-[600px] h-[600px] bg-gradient-to-tr from-blue-500 via-purple-400 to-purple-700 rounded-full mix-blend-overlay opacity-20 blur-2xl"></div>
 
-      <div className="relative mx-auto max-w-7xl px-6 z-10">
+      <div className="relative mx-auto max-w-8xl px-6 z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          
+
           {/* Text Section */}
           <div className="lg:pr-10 text-center lg:text-left animate__animated animate__fadeInLeft">
             <h1 className="text-5xl lg:text-6xl font-extrabold text-white leading-tight mb-6 tracking-tight">
-            Boost Your Casino Experience
+              Solve the Mystery and discover Big  Mystery of Mice! 🕵️🐭
             </h1>
             <p className="text-lg lg:text-xl text-white mb-8 leading-relaxed">
-            At panslotfi.com, we bring you top-notch evaluations of social slot games. Enjoy a completely safe, risk-free, and entertaining gaming experience with our slot game selections.
+              Join the adventure in Mystery Mice, a thrilling free-to-play social casino game! Spin the 6×6 tumbling reel grid alongside a clever detective mouse and uncover hidden rewards with no deposit needed. Collect Power Wilds that boost your chances of forming clusters, trigger exciting free spins with spyglass scatter symbols, and keep the fun going as sticky symbols and level-ups bring even more surprises. Play now and enjoy the ultimate entertainment experience—completely free!
             </p>
 
             {/* Call to Action Button */}
             <div className="flex justify-center lg:justify-start">
-              <Button btncolor="#ff00e0" buttonText="Play Now" href="/game/index.html"/>
+              <Button btncolor="#ff00e0" buttonText="About us" href="/about" />
             </div>
           </div>
 
@@ -52,7 +52,7 @@ const Banner = () => {
               <div className="absolute inset-0 rounded-full bg-gradient-to-r from-purple-600 via-pink-500 to-yellow-400 opacity-0 hover:opacity-80 transition-opacity duration-700"></div>
             </a>
           </div>
-          
+
         </div>
       </div>
     </div>

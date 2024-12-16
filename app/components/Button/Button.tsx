@@ -8,7 +8,8 @@ interface ButtonProps {
   onClick?: () => void;
   btncolor?: string;
   btnTxtColor?: string;
-  className?:string;
+  className?: string;
+  formType?: "signIn" | "signUp"; // Specifies whether the button opens a sign-in or sign-up form
 }
 
 const StyledWrapper = styled.div<{ btncolor?: string; btnTxtColor?: string }>`
@@ -43,10 +44,35 @@ const StyledWrapper = styled.div<{ btncolor?: string; btnTxtColor?: string }>`
   }
 `;
 
-const Button: React.FC<ButtonProps> = ({ buttonText, href, onClick, btncolor, btnTxtColor,className }) => {
+const Button: React.FC<ButtonProps> = ({
+  buttonText,
+  href,
+  onClick,
+  btncolor,
+  btnTxtColor,
+  className,
+  formType,
+}) => {
+  const handleButtonClick = () => {
+    // Set the form type in localStorage
+    if (formType) {
+      localStorage.setItem("formType", formType);
+    }
+
+    // Trigger the custom onClick handler if provided
+    if (onClick) {
+      onClick();
+    }
+  };
+
   return (
     <StyledWrapper className={className} btncolor={btncolor} btnTxtColor={btnTxtColor}>
-      <Link href={href || "#"} className="button" onClick={onClick}>
+      <Link
+        href={href || "#"}
+        className="button"
+        onClick={handleButtonClick}
+        aria-label={formType ? `Open ${formType} form` : "Button"}
+      >
         {buttonText}
       </Link>
     </StyledWrapper>

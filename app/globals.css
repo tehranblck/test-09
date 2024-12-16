@@ -13,10 +13,14 @@ body {
   /* background-image: linear-gradient(90deg, #BD24DF 0%, #2D6ADE 97.15%); */
   /* background: rgb(3, 3, 3); */
   /* background-blend-mode: overlay; */
-  background: rgb(255,0,104);
-background: linear-gradient(90deg, rgba(255,0,104,1) 0%, rgba(141,0,241,1) 60%);
+  background: #526548;
+background: linear-gradient(190deg, #526548 15%,#2007ff 30%, #ed74c1 60%);
 
   overflow-x: hidden;
+}
+input{
+  padding: 10px 12px;
+  outline: none;
 }
 
 html {

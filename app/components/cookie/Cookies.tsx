@@ -55,7 +55,7 @@ const CookieConsent: React.FC = () => {
         <div className="flex justify-center">
           <button
             onClick={handleAccept}
-            className="bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:ring-blue-400 text-white font-medium py-2 px-6 rounded-lg shadow-md transition-all duration-300"
+            className="bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:ring-blue-400 text-black font-medium py-2 px-6 rounded-lg shadow-md transition-all duration-300"
           >
             Got it!
           </button>
