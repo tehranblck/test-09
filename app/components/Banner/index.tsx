@@ -8,8 +8,8 @@ const Banner = () => {
     <div style={{ backgroundImage: 'url(/bg.png)', backgroundSize: 'cover' }} className=" relative overflow-hidden bg-gradient-to-r from-purple-900 via-purple-800 to-purple-700 pt-24 pb-20 lg:pt-36 lg:pb-24 mb-16" id="home-section">
       {/* Wavy shapes for creative background */}
 
-      <div className="description w-full h-full  absolute top-0 bottom-0"></div>
-      <div className="relative  mx-auto max-w-8xl px-6 z-10">
+      <div className=" w-full h-full  absolute top-0 bottom-0"></div>
+      <div className="relative  mx-auto container px-6 z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
 
           {/* Text Section */}
